@@ -1431,3 +1431,97 @@ footer a:hover {
 .udemy-comparison .fw-semibold {
     font-size: 1.5rem;
 } 
+
+/* Teacher Introduction Section */
+.teacher-intro {
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.teacher-intro .intro-text {
+    font-size: 1.5rem;
+    color: #000;
+}
+
+.story-list {
+    list-style: none;
+    padding: 0;
+    max-width: 48rem;
+    font-size: 1.125rem;
+    line-height: 1.75;
+}
+
+.story-image {
+    max-width: 28rem;
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.tiny-business-link {
+    background-color: rgb(255, 228, 204);
+    padding: 0 0.125rem;
+    text-decoration: none;
+    color: #000;
+}
+
+.tiny-business-link:hover {
+    text-decoration: underline;
+    color: #000;
+}
+
+.course-features {
+    max-width: 260px;
+    margin-top: -1rem;
+    list-style-position: inside;
+}
+
+@media (max-width: 768px) {
+    .teacher-intro .intro-text {
+        font-size: 1.25rem;
+    }
+    
+    .story-list {
+        font-size: 1rem;
+    }
+    
+    .story-image {
+        max-width: 100%;
+    }
+} 
+
+/* FAQ Section */
+.accordion-button {
+  padding: 1.5rem 0;
+}
+
+.accordion-button:not(.collapsed) {
+  color: inherit;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+  border-color: rgba(0,0,0,.125);
+}
+
+.accordion-button::after {
+  width: 1rem;
+  height: 1rem;
+  background-size: 1rem;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23333' stroke-linecap='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23333' stroke-linecap='round' stroke-width='2' d='M2 11l6-6 6 6'/%3e%3c/svg%3e");
+}
+
+.accordion-body {
+  padding: 0 0 1.5rem 0;
+  color: #666;
+}
+
+.accordion-item {
+  border-radius: 0 !important;
+} 
