@@ -16,78 +16,100 @@
 <body>
     <!-- Header -->
     <header class="navbar navbar-expand-lg fixed-top" id="mainHeader">
-        <div class="container">
+        <nav class="container">
             <a class="navbar-brand" href="/">
                 <div class="d-flex align-items-center">
                     <div class="logo-container me-2">
-                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M8 2H16C19.3137 2 22 4.68629 22 8V16C22 19.3137 19.3137 22 16 22H8C4.68629 22 2 19.3137 2 16V8C2 4.68629 4.68629 2 8 2Z" fill="#000000"/>
-                            <path d="M15.5 8.5L11.5 12.5L15.5 16.5M8.5 8.5L12.5 12.5L8.5 16.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
+                        <img src="image/icon.webp" width="32" height="32" alt="CodeFast Logo">
                     </div>
                     <span class="fw-semibold">CodeFast</span>
                 </div>
             </a>
             <div class="navbar-nav mx-auto d-none d-lg-flex">
-                <a href="/course" class="nav-link text-black">Reviews</a>
-                <a href="/pricing" class="nav-link text-black">Pricing</a>
-                <a href="/reviews" class="nav-link text-black">FAQ</a>
+                <a href="/course" class="nav-link ">Reviews</a>
+                <a href="/pricing" class="nav-link">Pricing</a>
+                <a href="/reviews" class="nav-link">FAQ</a>
             </div>
             <div class="d-flex align-items-center gap-2">
                 <a href="/signin" class="btn btn-outline-dark rounded-pill">Sign in</a>
                 <a href="/get-started" class="btn btn-dark rounded-pill">Get CodeFast</a>
             </div>
-        </div>
+        </nav>
     </header>
 
     <!-- Main Content -->
     <main>
         <!-- Hero Section -->
-        <section class="hero py-5 mt-5">
+        <section class="hero py-6 mt-5">
             <div class="container text-center">
-                <h1 class="display-4 fw-bold mb-4">Learn to code in weeks, not months</h1>
-                <p class="lead mb-4">Everything you need to build your SaaS or any online business—even as a complete beginner.</p>
-                <button class="btn btn-primary btn-lg rounded-pill mb-5">Get instant access</button>
-                
-                <div class="testimonials-avatars d-flex justify-content-center gap-2 mb-3">
-                    <img src="images/charles.jpg" alt="Charles" class="rounded-circle" width="40" height="40">
-                    <img src="images/victor.jpg" alt="Victor" class="rounded-circle" width="40" height="40">
-                    <img src="images/ascsei.jpg" alt="Ascsei" class="rounded-circle" width="40" height="40">
-                    <img src="images/bakir.jpg" alt="Bakir" class="rounded-circle" width="40" height="40">
-                    <img src="images/sallahudin.jpg" alt="Sallahudin" class="rounded-circle" width="40" height="40">
-                    <img src="images/tona.jpg" alt="Tona" class="rounded-circle" width="40" height="40">
-                    <img src="images/andrei.jpg" alt="Andrei" class="rounded-circle" width="40" height="40">
-                    <img src="images/cruz.jpg" alt="Cruz" class="rounded-circle" width="40" height="40">
-                    <img src="images/alan.jpg" alt="Alan" class="rounded-circle" width="40" height="40">
+                <div class="author-info d-flex align-items-center justify-content-center mb-4">
+                    <img src="image/marc.webp" alt="Author" class="rounded-circle me-2" width="40" height="40">
+                    <span class="text-muted color-black">By Marc Lou</span>
                 </div>
-                <p class="text-muted">1,620 entrepreneurs love the course</p>
+
+                <h1 class="display-4 fw-bolder mb-5">Learn to code <span class="highlight">  in weeks, </span> not months</h1>
+                <p class="lead mb-4">Everything you need to build your SaaS or any online business—even as a complete beginner.</p>
+                <button class="btn btn-primary btn-lg rounded-pill mb-3">Get instant access</button>
+                <div class="testimonials-avatars ">
+                    <img src="image/user1.webp" alt="Student" class="rounded-circle">
+                    <img src="image/user2.webp" alt="Student" class="rounded-circle">
+                    <img src="image/user3.webp" alt="Student" class="rounded-circle">
+                    <img src="image/user4.webp" alt="Student" class="rounded-circle">
+                    <img src="image/user5.webp" alt="Student" class="rounded-circle">
+                    <img src="image/user6.webp" alt="Student" class="rounded-circle">
+                    <img src="image/user7.webp" alt="Student" class="rounded-circle">
+                    <img src="image/user8.webp" alt="Student" class="rounded-circle">
+                    <img src="image/user9.webp" alt="Student" class="rounded-circle">
+                </div>
+                <p class="text-muted">
+                    <span class="testimonial-count">1,621</span> 
+                    <span class="testimonial-text">entrepreneurs love the course</span>
+                </p>
             </div>
         </section>
 
         <!-- Timeline Section -->
-        <section class="timeline py-5">
-            <div class="container">
-                <div class="row justify-content-center text-center">
-                    <div class="col-md-3">
-                        <div class="timeline-item">
+        <section class="timeline">
+            <div class="container position-relative">
+                <!-- Progress Line -->
+                <div class="timeline-line"></div>
+                
+                <div class="row justify-content-between position-relative">
+                    <div class="col-md-3 timeline-point">
+                        <div class="timeline-icon">
+                            <img src="image/day1.webp" alt="Day 1" class="img-fluid">
+                        </div>
+                        <div class="timeline-content">
                             <h3>Day 1</h3>
                             <p>Learn the fundamentals of coding</p>
                         </div>
                     </div>
-                    <div class="col-md-3">
-                        <div class="timeline-item">
+                    
+                    <div class="col-md-3 timeline-point">
+                        <div class="timeline-icon">
+                            <img src="image/day4.webp" alt="Day 4" class="img-fluid">
+                        </div>
+                        <div class="timeline-content">
                             <h3>Day 4</h3>
                             <p>Log in users and save in database</p>
                         </div>
                     </div>
-                    <div class="col-md-3">
-                        <div class="timeline-item">
+                    
+                    <div class="col-md-3 timeline-point">
+                        <div class="timeline-icon">
+                            <img src="image/day9.webp" alt="Day 9" class="img-fluid">
+                        </div>
+                        <div class="timeline-content">
                             <h3>Day 9</h3>
                             <p>Set up subscription payments</p>
                         </div>
                     </div>
-                    <div class="col-md-3">
-                        <div class="timeline-item">
+                    
+                    <div class="col-md-3 timeline-point">
+                        <div class="timeline-icon">
+                            <img src="image/day14.webp" alt="Day 14" class="img-fluid">
+                        </div>
+                        <div class="timeline-content">
                             <h3>Day 14</h3>
                             <p>Launch your idea!</p>
                         </div>
@@ -95,54 +117,213 @@
                 </div>
             </div>
         </section>
-    </main>
 
-    <!-- Footer -->
-    <footer class="bg-light py-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="d-flex align-items-center mb-3">
-                        <img src="images/logo.svg" alt="CodeFast logo" class="me-2" height="24">
-                        <span class="fw-bold">CodeFast</span>
+        <!-- Comparison Section -->
+        <section class="comparison-section py-10">
+            <div class="container text-center">
+                <h2 class="display-4 fw-bold mb-5">
+                    Coding courses are designed for<br>
+                    <span class="text-pink">software engineers</span>, not <span class="text-green">entrepreneurs</span>
+                </h2>
+                
+                <div class="row justify-content-center gap-4">
+                    <!-- Employee Card -->
+                    <div class="col-md-5">
+                        <div class="comparison-card employee-card">
+                            <div class="card-header">
+                                <h3>Coding as an employee <span class="icon">❌</span></h3>
+                            </div>
+                            <ul class="list-unstyled text-start">
+                                <li>• Invert binary trees</li>
+                                <li>• Master 47 sorting algorithms you'll never implement</li>
+                                <li>• Memorize Big O notation to impress your interviewer</li>
+                                <li>• Read documentation longer than The Lord of the Rings</li>
+                                <li>• Write complex code when a simple AI prompt would do</li>
+                            </ul>
+                        </div>
                     </div>
-                    <p class="text-muted">Learn to code in weeks, not months.</p>
-                    <p class="text-muted">Made with ☕️ and 🥐 by Marc</p>
-                </div>
-                <div class="col-md-8">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <h5 class="mb-3">Links</h5>
-                            <ul class="list-unstyled">
-                                <li><a href="/support" class="text-decoration-none text-muted">Support</a></li>
-                                <li><a href="/pricing" class="text-decoration-none text-muted">Pricing</a></li>
-                                <li><a href="/course" class="text-decoration-none text-muted">Course</a></li>
-                                <li><a href="/reviews" class="text-decoration-none text-muted">Reviews & Case Studies</a></li>
-                                <li><a href="/affiliate" class="text-decoration-none text-muted">Affiliate (Earn up to $150)</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-md-4">
-                            <h5 class="mb-3">Legal</h5>
-                            <ul class="list-unstyled">
-                                <li><a href="/terms" class="text-decoration-none text-muted">Terms of services</a></li>
-                                <li><a href="/privacy" class="text-decoration-none text-muted">Privacy policy</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-md-4">
-                            <h5 class="mb-3">By the maker of this site</h5>
-                            <ul class="list-unstyled">
-                                <li><a href="#" class="text-decoration-none text-muted">Newsletter for makers</a></li>
-                                <li><a href="#" class="text-decoration-none text-muted">ByeDispute</a></li>
-                                <li><a href="#" class="text-decoration-none text-muted">IndiePage</a></li>
-                                <li><a href="#" class="text-decoration-none text-muted">ShipFast</a></li>
-                                <li><a href="#" class="text-decoration-none text-muted">DataFast</a></li>
+
+                    <!-- Entrepreneur Card -->
+                    <div class="col-md-5">
+                        <div class="comparison-card entrepreneur-card">
+                            <div class="card-header">
+                                <h3>Coding as an entrepreneur <span class="icon">✅</span></h3>
+                            </div>
+                            <ul class="list-unstyled text-start">
+                                <li>• Learn only the fundamentals</li>
+                                <li>• Use AI to code for you</li>
+                                <li>• Keep learning on the fly</li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="text-center mt-4">
-                <p class="text-muted">Copyright © 2024 - All rights reserved</p>
+        </section>
+
+        <!-- Learning Flywheel Section -->
+        <section class="flywheel-section py-10">
+            <div class="container text-center">
+                <div class="warning-text mb-4">
+                    <span class="icon">🚫</span> Instead of watching 100 hours of "JavaScript Basics" videos...
+                </div>
+
+                <div class="flywheel-content">
+                    <div class="flywheel-diagram">
+                        <!-- Top -->
+                        <div class="flywheel-item item-top">
+                            <img src="image/book.webp" alt="Book" class="rotate-n3">
+                            <span>Learn what you need</span>
+                        </div>
+                        
+                        <!-- Right -->
+                        <div class="flywheel-item item-right">
+                            <img src="image/bolt.webp" alt="Bolt" class="rotate-3">
+                            <span>Build features</span>
+                        </div>
+                        
+                        <!-- Bottom -->
+                        <div class="flywheel-item item-bottom">
+                            <img src="image/rocket.webp" alt="Rocket" class="rotate-n6">
+                            <span>Launch</span>
+                        </div>
+                        
+                        <!-- Left -->
+                        <div class="flywheel-item item-left">
+                            <img src="image/bulb.webp" alt="Bulb">
+                            <span>Get feedback</span>
+                        </div>
+
+                        <!-- SVG Arrows -->
+                        <div class="arrow arrow-1">
+                            <svg class="arrow-svg" viewBox="0 0 251 81">
+                                <path d="M14.4435 26.0257C16.3478 34.2205 18.0405 42.2052 20.1564 51.2405C14.6551 50.6101 11.4813 47.2481 10.2118 43.4659C6.40317 32.1193 2.80615 20.5625 0.267089 8.79558C-1.21404 2.07164 3.65251 -1.50048 10.2118 0.600755C21.2144 3.96273 32.0054 7.95508 43.0081 11.7373C43.6428 11.9474 44.4892 12.1576 44.7008 12.5778C45.7587 14.0487 46.3935 15.7296 47.2398 17.4106C45.7587 18.041 44.2776 19.5119 43.0081 19.3017C38.5647 18.6714 34.3329 17.6208 30.1011 16.7803C27.7737 16.36 25.6577 15.7297 22.2723 16.7803C24.5998 19.3018 26.9273 22.0333 29.2548 24.5548C79.6129 74.5642 155.15 85.0703 217.781 51.2405C225.821 46.8279 233.227 41.5748 241.055 36.742C243.806 35.061 246.557 33.5901 249.307 31.9092C249.942 32.3294 250.365 32.9598 251 33.38C250.365 35.2711 250.154 37.7926 248.673 39.0533C244.018 43.4659 239.363 47.8785 234.073 51.6607C181.599 89.4829 108.601 90.9538 52.1064 54.8126C41.3154 47.8785 31.7938 39.0533 21.8492 31.0686C19.7333 29.3876 18.0406 27.4966 16.1363 25.6054C15.7131 25.3953 15.0783 25.6054 14.4435 26.0257Z"></path>
+                            </svg>
+                            
+                        </div>
+                        <div class="arrow arrow-2">
+                            <svg class="arrow-svg" viewBox="0 0 251 81">
+                                <path d="M14.4435 26.0257C16.3478 34.2205 18.0405 42.2052 20.1564 51.2405C14.6551 50.6101 11.4813 47.2481 10.2118 43.4659C6.40317 32.1193 2.80615 20.5625 0.267089 8.79558C-1.21404 2.07164 3.65251 -1.50048 10.2118 0.600755C21.2144 3.96273 32.0054 7.95508 43.0081 11.7373C43.6428 11.9474 44.4892 12.1576 44.7008 12.5778C45.7587 14.0487 46.3935 15.7296 47.2398 17.4106C45.7587 18.041 44.2776 19.5119 43.0081 19.3017C38.5647 18.6714 34.3329 17.6208 30.1011 16.7803C27.7737 16.36 25.6577 15.7297 22.2723 16.7803C24.5998 19.3018 26.9273 22.0333 29.2548 24.5548C79.6129 74.5642 155.15 85.0703 217.781 51.2405C225.821 46.8279 233.227 41.5748 241.055 36.742C243.806 35.061 246.557 33.5901 249.307 31.9092C249.942 32.3294 250.365 32.9598 251 33.38C250.365 35.2711 250.154 37.7926 248.673 39.0533C244.018 43.4659 239.363 47.8785 234.073 51.6607C181.599 89.4829 108.601 90.9538 52.1064 54.8126C41.3154 47.8785 31.7938 39.0533 21.8492 31.0686C19.7333 29.3876 18.0406 27.4966 16.1363 25.6054C15.7131 25.3953 15.0783 25.6054 14.4435 26.0257Z"></path>
+                            </svg>
+                        </div>
+                        <div class="arrow arrow-3">
+                            <svg class="arrow-svg" viewBox="0 0 251 81">
+                                <path d="M14.4435 26.0257C16.3478 34.2205 18.0405 42.2052 20.1564 51.2405C14.6551 50.6101 11.4813 47.2481 10.2118 43.4659C6.40317 32.1193 2.80615 20.5625 0.267089 8.79558C-1.21404 2.07164 3.65251 -1.50048 10.2118 0.600755C21.2144 3.96273 32.0054 7.95508 43.0081 11.7373C43.6428 11.9474 44.4892 12.1576 44.7008 12.5778C45.7587 14.0487 46.3935 15.7296 47.2398 17.4106C45.7587 18.041 44.2776 19.5119 43.0081 19.3017C38.5647 18.6714 34.3329 17.6208 30.1011 16.7803C27.7737 16.36 25.6577 15.7297 22.2723 16.7803C24.5998 19.3018 26.9273 22.0333 29.2548 24.5548C79.6129 74.5642 155.15 85.0703 217.781 51.2405C225.821 46.8279 233.227 41.5748 241.055 36.742C243.806 35.061 246.557 33.5901 249.307 31.9092C249.942 32.3294 250.365 32.9598 251 33.38C250.365 35.2711 250.154 37.7926 248.673 39.0533C244.018 43.4659 239.363 47.8785 234.073 51.6607C181.599 89.4829 108.601 90.9538 52.1064 54.8126C41.3154 47.8785 31.7938 39.0533 21.8492 31.0686C19.7333 29.3876 18.0406 27.4966 16.1363 25.6054C15.7131 25.3953 15.0783 25.6054 14.4435 26.0257Z"></path>
+                            </svg>
+                        </div>
+                        <div class="arrow arrow-4">
+                            <svg class="arrow-svg" viewBox="0 0 251 81">
+                                <path d="M14.4435 26.0257C16.3478 34.2205 18.0405 42.2052 20.1564 51.2405C14.6551 50.6101 11.4813 47.2481 10.2118 43.4659C6.40317 32.1193 2.80615 20.5625 0.267089 8.79558C-1.21404 2.07164 3.65251 -1.50048 10.2118 0.600755C21.2144 3.96273 32.0054 7.95508 43.0081 11.7373C43.6428 11.9474 44.4892 12.1576 44.7008 12.5778C45.7587 14.0487 46.3935 15.7296 47.2398 17.4106C45.7587 18.041 44.2776 19.5119 43.0081 19.3017C38.5647 18.6714 34.3329 17.6208 30.1011 16.7803C27.7737 16.36 25.6577 15.7297 22.2723 16.7803C24.5998 19.3018 26.9273 22.0333 29.2548 24.5548C79.6129 74.5642 155.15 85.0703 217.781 51.2405C225.821 46.8279 233.227 41.5748 241.055 36.742C243.806 35.061 246.557 33.5901 249.307 31.9092C249.942 32.3294 250.365 32.9598 251 33.38C250.365 35.2711 250.154 37.7926 248.673 39.0533C244.018 43.4659 239.363 47.8785 234.073 51.6607C181.599 89.4829 108.601 90.9538 52.1064 54.8126C41.3154 47.8785 31.7938 39.0533 21.8492 31.0686C19.7333 29.3876 18.0406 27.4966 16.1363 25.6054C15.7131 25.3953 15.0783 25.6054 14.4435 26.0257Z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <h2 class="display-4 fw-bold mt-5">Start a learning <span class="highlight">flywheel</span></h2>
+                <p class="lead text-muted mb-5">
+                    Code like an entrepreneur — build your idea in<br>
+                    14 days to get real-world feedback and keep<br>
+                    learning as you go.
+                </p>
+
+                <button class="btn btn-primary btn-lg rounded-pill mb-3">Get instant access</button>
+                <div class="text-muted mt-3">
+                    <span class="check-icon">✓</span> No experience needed
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonial Section -->
+        <section class="testimonial-section py-10">
+            <div class="container">
+                <div class="testimonial-content">
+                    <div class="testimonial-header d-flex align-items-start gap-4 mb-4">
+                        <img src="image/avatar1.webp" alt="User Avatar" class="testimonial-avatar">
+                        <div class="testimonial-text">
+                            <div class="quote mb-1">
+                                <div class="quote-container">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="quote-svg">
+                                        <path d="M8.5 13.5C8.5 16.2614 6.26142 18.5 3.5 18.5C2.94772 18.5 2.5 18.9477 2.5 19.5C2.5 20.0523 2.94772 20.5 3.5 20.5C7.36599 20.5 10.5 17.366 10.5 13.5V5.75C10.5 4.23122 9.26878 3 7.75 3H3.75C2.23122 3 1 4.23122 1 5.75V9.75C1 11.2688 2.23122 12.5 3.75 12.5H7.75C8.01001 12.5 8.26158 12.4639 8.5 12.3965V13.5Z" fill="currentColor"></path>
+                                        <path d="M20.5 13.5C20.5 16.2614 18.2614 18.5 15.5 18.5C14.9477 18.5 14.5 18.9477 14.5 19.5C14.5 20.0523 14.9477 20.5 15.5 20.5C19.366 20.5 22.5 17.366 22.5 13.5V5.75C22.5 4.23122 21.2688 3 19.75 3H15.75C14.2312 3 13 4.23122 13 5.75V9.75C13 11.2688 14.2312 12.5 15.75 12.5H19.75C20.01 12.5 20.2616 12.4639 20.5 12.3965V13.5Z" fill="currentColor"></path>
+                                    </svg>
+                                    <p class="quote-text">
+                                        <span class="highlight">First sale is definitely special</span>, especially when it's your first self coded web-app. Thank you @marclou
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="author">—Jainil</div>
+                        </div>
+                    </div>
+                    <div class="built-info mb-2">
+                        Built <a href="#" class="built-link">confettisaas.pro</a>, <a href="#" class="built-link">epictravelphotos.pro</a> & more
+                        <svg class="arrow-down" width="251" height="251" viewBox="0 0 251 81">
+                            <path d="M14.4435 26.0257C16.3478 34.2205 18.0405 42.2052 20.1564 51.2405C14.6551 50.6101 11.4813 47.2481 10.2118 43.4659C6.40317 32.1193 2.80615 20.5625 0.267089 8.79558C-1.21404 2.07164 3.65251 -1.50048 10.2118 0.600755C21.2144 3.96273 32.0054 7.95508 43.0081 11.7373C43.6428 11.9474 44.4892 12.1576 44.7008 12.5778C45.7587 14.0487 46.3935 15.7296 47.2398 17.4106C45.7587 18.041 44.2776 19.5119 43.0081 19.3017C38.5647 18.6714 34.3329 17.6208 30.1011 16.7803C27.7737 16.36 25.6577 15.7297 22.2723 16.7803C24.5998 19.3018 26.9273 22.0333 29.2548 24.5548C79.6129 74.5642 155.15 85.0703 217.781 51.2405C225.821 46.8279 233.227 41.5748 241.055 36.742C243.806 35.061 246.557 33.5901 249.307 31.9092C249.942 32.3294 250.365 32.9598 251 33.38C250.365 35.2711 250.154 37.7926 248.673 39.0533C244.018 43.4659 239.363 47.8785 234.073 51.6607C181.599 89.4829 108.601 90.9538 52.1064 54.8126C41.3154 47.8785 31.7938 39.0533 21.8492 31.0686C19.7333 29.3876 18.0406 27.4966 16.1363 25.6054C15.7131 25.3953 15.0783 25.6054 14.4435 26.0257Z"></path>
+                        </svg>
+                    </div>
+                    <div class="macbook-container">
+                        <img src="image/macbook.webp" alt="Macbook Frame" class="macbook-frame">
+                        <div class="screen-content">
+                            <img src="image/epictravelphoto.gif" alt="Epic Travel Photos Demo" class="screen-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="d-flex align-items-center mb-3">
+                        <div class="logo-container me-2">
+                            <img src="image/icon.webp" width="32" height="32" alt="CodeFast Logo">
+                        </div>
+                        <span class="fw-semibold">CodeFast</span>
+                    </div>
+                    <p>Learn to code in weeks, not months.</p>
+                    <p>Made with ❤️ and 🥐 by Marc</p>
+                    <div class="built-with mt-3">
+                        <span class="badge">Built with ⚡️ ShipFast</span>
+                    </div>
+                    <p class="copyright mt-3">Copyright © 2024 - All rights reserved</p>
+                </div>
+                <div class="col-md-8">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h5>LINKS</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="/support">Support</a></li>
+                                <li><a href="/pricing">Pricing</a></li>
+                                <li><a href="/course">Course</a></li>
+                                <li><a href="/reviews">Reviews & Case Studies</a></li>
+                                <li><a href="/affiliate">Affiliate (Earn up to $150)</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <h5>LEGAL</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="/terms">Terms of services</a></li>
+                                <li><a href="/privacy">Privacy policy</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <h5>BY THE MAKER OF THIS SITE</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="#">Newsletter for makers</a></li>
+                                <li><a href="#">ByeDispute</a></li>
+                                <li><a href="#">IndiePage</a></li>
+                                <li><a href="#">ZenVoice</a></li>
+                                <li><a href="#">GamifyList</a></li>
+                                <li><a href="#">WorkbookPDF</a></li>
+                                <li><a href="#">HabitsGarden</a></li>
+                                <li><a href="#">ShipFast</a></li>
+                                <li><a href="#">DataFast</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>

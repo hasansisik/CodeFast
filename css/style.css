@@ -12,25 +12,22 @@ body {
 
 /* Header Styles */
 .navbar {
-    transition: all 0.3s ease;
     background-color: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(5px);
     padding: 0;
     height: 72px;
     border-bottom: 1px solid transparent;
-    display: flex;
+    justify-content: space-between; 
     align-items: center;
 }
 
 .navbar.scrolled {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid black;
 }
 
 .navbar .container {
-    max-width: 1200px;
     position: relative;
     height: 100%;
-    display: flex;
     align-items: center;
 }
 
@@ -60,7 +57,7 @@ body {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    gap: 0.5rem;
+    gap: 22px;
     height: 100%;
     display: flex;
     align-items: center;
@@ -68,59 +65,63 @@ body {
 
 .nav-link {
     font-size: 1rem;
-    color: #000 !important;
+    color: #1e1e1e !important;
     font-weight: 500;
     padding: 0.625rem 0.75rem !important;
-    transition: all 0.2s ease;
     position: relative;
     height: 100%;
     display: flex;
     align-items: center;
+    text-decoration: none;
 }
 
 .nav-link::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: #000;
-    transform: scaleX(0);
-    transition: transform 0.2s ease;
+    display: none;
 }
 
-.nav-link:hover::after {
-    transform: scaleX(1);
+.nav-link:hover {
+    text-decoration: underline;
 }
 
-/* Sağdaki butonlar */
+/* Buton stilleri */
 .btn {
     font-size: 0.9375rem;
     font-weight: 500;
-    padding: 0.625rem 1.25rem;
-    transition: all 0.2s ease;
+    padding: 0.500rem 1.25rem;
+    transition: all 0.3s ease;
+    position: relative;
+    background: #fff;
+    border: 1px solid #000;
+    box-shadow: 0 0 0 0 rgba(0,0,0,0.2);
+}
+
+.btn:hover {
+    transform: translate(-4px, -4px);
+    box-shadow: 4px 4px 0 0 rgba(0,0,0,1);
 }
 
 .btn-outline-dark {
-    border-color: rgba(0, 0, 0, 0.15);
+    background-color: #fff;
+    border: 1px solid #000;
     color: var(--text-color);
 }
 
 .btn-outline-dark:hover {
-    background-color: rgba(0, 0, 0, 0.05);
-    border-color: rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    border-color: #000;
     color: var(--text-color);
 }
 
 .btn-dark {
-    background-color: var(--primary-color);
-    border-color: var(--primary-color);
+    background-color: #000000;
+    border: 1px solid #ffffff;
+    color: #ffffff;
 }
 
 .btn-dark:hover {
-    background-color: #1a1a1a;
-    border-color: #1a1a1a;
+    background-color: #fccc9c;
+    border-color: #000;
+    color: #000000;
 }
 
 /* Sağdaki butonların container'ı */
@@ -134,16 +135,54 @@ body {
 
 /* Hero Section */
 .hero {
-    padding-top: 140px;
-    padding-bottom: 80px;
+    padding: 80px 0;
+    background-color: #fff;
 }
 
 .hero h1 {
-    font-size: 4rem;
-    font-weight: 700;
-    line-height: 1.1;
-    letter-spacing: -0.02em;
+    font-size: 4.4rem;
+    line-height: 1.2;
     margin-bottom: 1.5rem;
+    font-weight: 900 !important;
+    letter-spacing: -0.03em;
+}
+
+/* "in weeks" için özel altı çizgili stil */
+.hero h1 .highlight {
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+}
+
+.hero h1 .highlight::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    width: 100%;
+    height: 25px;
+    background: rgb(249, 220, 248)!important;
+    opacity: 1;
+    z-index: -1;
+}
+
+/* Hover efekti için */
+.hero h1 .highlight:hover::after {
+    background: #dbb8ff !important;
+    transition: all 0.3s ease;
+}
+
+.hero .btn-primary {
+    background-color: rgb(249, 220, 248);
+    border: 1px solid #000;
+    color: #000;
+    padding: 20px 75px;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+.hero .btn-primary:hover {
+    color: #000;
 }
 
 .hero p {
@@ -153,18 +192,38 @@ body {
     margin: 0 auto 2rem;
 }
 
+.hero p.lead {
+    font-size: 24px;
+    color: rgb(68, 68, 68);
+    max-width: 600px;
+    margin: 0 auto 2rem;
+    line-height: 1.4;
+}
+
 /* Testimonials */
+.testimonials-avatars {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .testimonials-avatars img {
-    width: 40px;
-    height: 40px;
-    border: 2px solid white;
-    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    border: 2px solid #fff;
+    margin-left: -18px;
+    transition: transform 0.2s ease;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    margin-left: -0.5rem;
 }
 
 .testimonials-avatars img:first-child {
     margin-left: 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.testimonials-avatars img:hover {
+    transform: translateY(-2px);
+    z-index: 2;
 }
 
 .timeline-item {
@@ -176,4 +235,589 @@ body {
 
 footer a:hover {
     color: var(--primary-color) !important;
+}
+
+.author-info {
+    margin-bottom: 2rem;
+}
+
+.author-info img {
+    border: 1px solid rgba(0,0,0,0.1);
+    box-shadow: 2px 2px 0 0 rgba(0,0,0,1);
+    transition: all 0.3s ease;
+}
+
+.author-info img:hover {
+    transform: translate(-4px, -4px);
+    box-shadow: 3px 3px 0 0 rgba(0,0,0,1);
+}
+
+.author-info span {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.author-info span.color-black {
+    color: #000 !important;
+    font-weight: 600;
+}
+
+/* Sayı ve metin stilleri */
+.hero .testimonial-count {
+    font-weight: 700;
+    font-style: italic;
+    color: #000;
+    font-size: 16px;    
+}
+
+.hero .testimonial-text {
+    font-style: italic;
+    color: rgb(68, 68, 68);
+    font-size: 16px;    
+}
+
+/* Timeline Styles */
+.timeline {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 128px;
+}
+
+.timeline-line {
+    position: absolute;
+    top: 75%;
+    left: -100vw;
+    right: -100vw;
+    height: 1px;
+    background: #000;
+    transform: translateY(-50%);
+}
+
+.timeline-point {
+    text-align: center;
+    position: relative;
+}
+
+.timeline-point::after {
+    content: '';
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background: #000;
+    border-radius: 50%;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.timeline-icon {
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+.timeline-icon img {
+    width: 192px;
+    height: 192px;
+}
+
+/* Day 1 - Gear icon */
+.timeline-point:nth-child(1) .timeline-icon img {
+    transform: scale(0.60) translateY(16px);
+}
+
+/* Day 9 - Credit card reader */
+.timeline-point:nth-child(3) .timeline-icon img {
+    transform: scale(0.75) translateY(16px);
+}
+
+.timeline-content {
+    margin-top: 30px;
+    padding-top: 30px;
+}
+
+.timeline-content h3 {
+    font-size: 1.125rem; /* text-lg */
+    font-weight: 700; /* font-bold */
+    margin-bottom: 8px;
+}
+
+.timeline-content p {
+    color: #666; /* text-base-content-secondary */
+    font-size: 1rem;
+    margin: 0 auto;
+    max-width: 20rem;
+}
+
+/* Timeline noktaları için hover efekti */
+.timeline-icon:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+}
+
+/* Footer stilleri */
+.footer {
+    background-color: #121212;
+    color: #ffffff;
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
+
+.footer p {
+    color: #888888;
+    margin-bottom: 0.5rem;
+}
+
+.footer h5 {
+    color: #888888;
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    letter-spacing: 0.05em;
+}
+
+.footer ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.875rem;
+    transition: color 0.2s ease;
+}
+
+.footer ul li a:hover {
+    color: #888888;
+}
+
+.footer .badge {
+    background-color: #ffffff;
+    color: #000000;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+}
+
+.footer .copyright {
+    color: #888888;
+    font-size: 0.875rem;
+}
+
+.footer .logo-container img {
+    filter: invert(1);
+}
+
+.footer .fw-semibold {
+    color: #ffffff;
+}
+
+/* Comparison Section Styles */
+.comparison-section {
+    background-color: #121212;
+    color: white;
+    padding: 192px 0;
+}
+
+.comparison-section h2 {
+    font-size: 3.5rem;
+    line-height: 1.2;
+    margin-bottom: 64px;
+}
+
+.text-pink {
+    color: #ffc2c2;
+}
+
+.text-green {
+    color: #9fff9c;
+}
+
+.comparison-card {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 24px;
+    padding: 32px;
+    height: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.comparison-card .card-header {
+    margin-bottom: 24px;
+}
+
+.comparison-card h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.comparison-card .icon {
+    font-size: 1.25rem;
+}
+
+.comparison-card ul li {
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 16px;
+    font-size: 1.125rem;
+    line-height: 1.5;
+}
+
+.employee-card {
+    border-color: rgba(255, 194, 194, 0.2);
+}
+
+.entrepreneur-card {
+    border-color: rgba(159, 255, 156, 0.2);
+}
+
+/* Learning Flywheel Section Styles */
+.flywheel-section {
+    background-color: #ffffff;
+    padding: 128px 0;
+}
+
+.warning-text {
+    font-style: italic;
+    font-size: 18px;
+    color: rgb(185, 28, 28);
+    font-weight: 300;
+}
+
+.warning-text .icon {
+    margin-right: 8px;
+    font-style: normal;
+}
+
+.flywheel-content {
+    max-width: 600px;
+    margin: 64px auto;
+    position: relative;
+}
+
+.flywheel-diagram {
+    position: relative;
+    width: 450px;
+    height: 350px;
+    margin: 0 auto;
+}
+
+.flywheel-center {
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 120px;
+}
+
+.flywheel-item {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90px;
+}
+
+.flywheel-item img {
+    width: 3rem;
+    height: 3rem;
+    margin-bottom: 4px;
+}
+
+.flywheel-item span {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+}
+
+/* Pozisyonlar */
+.item-top {
+    top: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.item-right {
+    top: 50%;
+    right: 8px;
+    transform: translateY(-50%);
+}
+
+.item-bottom {
+    bottom: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.item-left {
+    top: 50%;
+    left: 8px;
+    transform: translateY(-50%);
+}
+
+/* Rotasyonlar */
+.rotate-3 {
+    transform: rotate(3deg);
+}
+
+.rotate-n3 {
+    transform: rotate(-3deg);
+}
+
+.rotate-n6 {
+    transform: rotate(-6deg);
+}
+
+/* SVG Oklar */
+.arrow {
+    position: absolute;
+    width: 36px;
+    height: 42px;
+}
+
+.arrow-svg {
+    width: 36px;
+    height: 42px;
+    fill: #000;
+}
+
+.arrow-1 {
+    top: 12%;
+    right: 12%;
+    transform: rotate(-135deg);
+}
+
+.arrow-2 {
+    bottom: 12%;
+    right: 12%;
+    transform: rotate(-55deg);
+}
+
+.arrow-3 {
+    bottom: 12%;
+    left: 12%;
+    transform: rotate(45deg);
+}
+
+.arrow-4 {
+    top: 12%;
+    left: 12%;
+    transform: rotate(135deg);
+}
+
+.flywheel-section h2 .highlight {
+    position: relative;
+    display: inline-block;
+}
+
+.flywheel-section h2 .highlight::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    width: 100%;
+    height: 25px;
+    background: rgb(159, 255, 156);
+    opacity: 0.5;
+    z-index: -1;
+}
+
+.flywheel-section .check-icon {
+    color: #28a745;
+    margin-right: 8px;
+}
+
+.flywheel-section .btn-primary {
+    background-color: rgb(159, 255, 156);
+    border: 1px solid #000;
+    color: #000;
+    padding: 20px 75px;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+.flywheel-section .btn-primary:hover {
+    transform: translate(-4px, -4px);
+    box-shadow: 4px 4px 0 0 rgba(0,0,0,1);
+}
+
+/* Testimonial Section Styles */
+.testimonial-section {
+    background-color: #fff;
+    padding: 96px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.testimonial-content {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testimonial-header {
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+}
+
+.testimonial-avatar {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border: 1px solid #000;
+    box-shadow: 4px 4px 0 0 rgba(0,0,0,1);
+}
+
+.testimonial-text {
+    text-align: left;
+    flex: 1;
+    max-width: 400px;
+}
+
+.quote {
+    font-size: 1rem;
+    line-height: 1.4;
+    color: #000;
+}
+
+.quote-mark {
+    font-size: 2.5rem;
+    line-height: 0;
+    position: relative;
+    top: 16px;
+    margin-right: 4px;
+}
+
+.quote .highlight {
+    color: #ae5a00;
+    font-weight: 600;
+    font-size: 1rem;
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+}
+
+.quote .highlight::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 2px;
+    width: 100%;
+    height: 25px;
+    background-color: rgb(234, 179, 8);
+    opacity: 0.3;
+    z-index: -1;
+}
+
+.author {
+    font-size: 1rem;
+    color: #666;
+    font-style: italic;
+}
+
+.built-info {
+    text-align: center;
+    font-size: 12px;
+    color: #000000;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin: 2rem 0;
+    width: fit-content;
+    padding-left: 64px;
+    font-style: italic;
+}
+
+.arrow-down {
+    width: 32px;
+    height: 32px;
+    transform: rotate(270deg) scale(1);
+    fill: #000000;
+    position: absolute;
+    left: 0;
+    margin-top: -24px;
+}
+
+.built-link {
+    font-style: italic;
+    text-decoration: underline;
+    color: #000;
+    text-decoration: none;
+    font-weight: 300;
+}
+
+.built-link:hover {
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.macbook-container {
+    position: relative;
+    width: 100%;
+    margin-top: 24px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 2rem 0 0;
+}
+
+.macbook-frame {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.screen-content {
+    position: absolute;
+    top: 2.5%;
+    left: 12.5%;
+    width: 74.5%;
+    height: 74%;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: #000;
+}
+
+.screen-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    display: block;
+}
+
+.quote-container {
+    position: relative;
+    padding-top: 24px;
+    max-width: 400px;
+}
+
+.quote-svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 24px;
+    color: #000;
+    opacity: 1;
+}
+
+.quote-text {
+    max-width: 400px;
+    margin: 0;
+    line-height: 1.6;
 } 
