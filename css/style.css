@@ -334,7 +334,7 @@ footer a:hover {
     top: 75%;
     left: -100vw;
     right: -100vw;
-    height: 1px;
+    height: 0.5px;
     background: #000;
     transform: translateY(-50%);
 }
@@ -998,8 +998,32 @@ footer a:hover {
 
 /* Terms Page Styles */
 .terms-content {
-    padding-top: 120px;
+    padding-top: 20px;
     color: var(--text-color);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.back-button {
+    margin-bottom: 2rem;
+}
+
+.back-button .btn-link {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 12px 24px;
+    border-radius: 30px;
+    background: #fff;
+    transition: all 0.3s ease;
+    display: inline-block;
+    border: none;
+}
+
+.back-button .btn-link:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 2px 2px 0 0 rgba(0,0,0,1);
+    border: 1px solid #000;
 }
 
 .terms-content h1 {
