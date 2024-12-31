@@ -1,479 +1,740 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CodeFast - Learn to code in weeks, not months</title>
-    
+
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <!-- Custom CSS -->
-    <link href="css/style.css" rel="stylesheet">
-    
+    <link href="css/style.css" rel="stylesheet" />
+
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
     <!-- Header -->
     <header class="navbar navbar-expand-lg fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="/">
-                <div class="logo-container me-2">
-                    <img src="image/icon.webp" width="32" height="32" alt="CodeFast Logo">
-                </div>
-                <span class="fw-semibold">CodeFast</span>
-            </a>
+      <div class="container">
+        <a class="navbar-brand" href="/">
+          <div class="logo-container me-2">
+            <img
+              src="image/icon.webp"
+              width="32"
+              height="32"
+              alt="CodeFast Logo"
+            />
+          </div>
+          <span class="fw-semibold">CodeFast</span>
+        </a>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarContent"
+          aria-controls="navbarContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <div class="collapse navbar-collapse" id="navbarContent">
-                <div class="navbar-nav mx-auto">
-                    <a href="/course" class="nav-link">Reviews</a>
-                    <a href="/pricing" class="nav-link">Pricing</a>
-                    <a href="/reviews" class="nav-link">FAQ</a>
-                </div>
-                <div class="d-flex align-items-center gap-2">
-                    <a href="/signin" class="btn btn-outline-dark rounded-pill">Sign in</a>
-                    <a href="/get-started" class="btn btn-dark rounded-pill">Get CodeFast</a>
-                </div>
-            </div>
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <div class="navbar-nav mx-auto">
+            <a href="/course" class="nav-link">Reviews</a>
+            <a href="/pricing" class="nav-link">Pricing</a>
+            <a href="/reviews" class="nav-link">FAQ</a>
+          </div>
+          <div class="d-flex align-items-center gap-2">
+            <a href="/signin" class="btn btn-outline-dark rounded-pill"
+              >Sign in</a
+            >
+            <a href="/get-started" class="btn btn-dark rounded-pill"
+              >Get CodeFast</a
+            >
+          </div>
         </div>
+      </div>
     </header>
 
     <!-- Main Content -->
     <main>
-        <!-- Hero Section -->
-        <section class="hero py-6 mt-5">
-            <div class="container text-center">
-                <div class="author-info d-flex align-items-center justify-content-center mb-4">
-                    <img src="image/marc.webp" alt="Author" class="rounded-circle me-2" width="40" height="40">
-                    <span class="text-muted color-black">By Marc Lou</span>
-                </div>
+      <!-- Hero Section -->
+      <section class="hero py-6 mt-5">
+        <div class="container text-center">
+          <div
+            class="author-info d-flex align-items-center justify-content-center mb-4"
+          >
+            <img
+              src="image/marc.webp"
+              alt="Author"
+              class="rounded-circle me-2"
+              width="40"
+              height="40"
+            />
+            <span class="text-muted color-black">By Marc Lou</span>
+          </div>
 
-                <h1 class="display-4 fw-bolder mb-5">Learn to code <span class="highlight">  in weeks, </span> not months</h1>
-                <p class="lead mb-4">Everything you need to build your SaaS or any online business—even as a complete beginner.</p>
-                <button class="btn btn-primary btn-lg rounded-pill mb-3">Get instant access</button>
-                <div class="testimonials-avatars ">
-                    <img src="image/user1.webp" alt="Student" class="rounded-circle">
-                    <img src="image/user2.webp" alt="Student" class="rounded-circle">
-                    <img src="image/user3.webp" alt="Student" class="rounded-circle">
-                    <img src="image/user4.webp" alt="Student" class="rounded-circle">
-                    <img src="image/user5.webp" alt="Student" class="rounded-circle">
-                    <img src="image/user6.webp" alt="Student" class="rounded-circle">
-                    <img src="image/user7.webp" alt="Student" class="rounded-circle">
-                    <img src="image/user8.webp" alt="Student" class="rounded-circle">
-                    <img src="image/user9.webp" alt="Student" class="rounded-circle">
+          <h1 class="display-4 fw-bolder mb-5">
+            Learn to code <span class="highlight"> in weeks, </span> not months
+          </h1>
+          <p class="lead mb-4">
+            Everything you need to build your SaaS or any online business—even
+            as a complete beginner.
+          </p>
+          <button class="btn btn-primary btn-lg rounded-pill mb-3">
+            Get instant access
+          </button>
+          <div class="testimonials-avatars">
+            <img src="image/user1.webp" alt="Student" class="rounded-circle" />
+            <img src="image/user2.webp" alt="Student" class="rounded-circle" />
+            <img src="image/user3.webp" alt="Student" class="rounded-circle" />
+            <img src="image/user4.webp" alt="Student" class="rounded-circle" />
+            <img src="image/user5.webp" alt="Student" class="rounded-circle" />
+            <img src="image/user6.webp" alt="Student" class="rounded-circle" />
+            <img src="image/user7.webp" alt="Student" class="rounded-circle" />
+            <img src="image/user8.webp" alt="Student" class="rounded-circle" />
+            <img src="image/user9.webp" alt="Student" class="rounded-circle" />
+          </div>
+          <p class="text-muted">
+            <span class="testimonial-count">1,621</span>
+            <span class="testimonial-text">entrepreneurs love the course</span>
+          </p>
+        </div>
+      </section>
+
+      <!-- Timeline Section -->
+      <section class="timeline">
+        <div class="container position-relative">
+          <!-- Progress Line -->
+          <div class="timeline-line"></div>
+
+          <div class="row justify-content-between position-relative">
+            <div class="col-md-3 timeline-point">
+              <div class="timeline-icon">
+                <img src="image/day1.webp" alt="Day 1" class="img-fluid" />
+              </div>
+              <div class="timeline-content">
+                <h3>Day 1</h3>
+                <p>Learn the fundamentals of coding</p>
+              </div>
+            </div>
+
+            <div class="col-md-3 timeline-point">
+              <div class="timeline-icon">
+                <img src="image/day4.webp" alt="Day 4" class="img-fluid" />
+              </div>
+              <div class="timeline-content">
+                <h3>Day 4</h3>
+                <p>Log in users and save in database</p>
+              </div>
+            </div>
+
+            <div class="col-md-3 timeline-point">
+              <div class="timeline-icon">
+                <img src="image/day9.webp" alt="Day 9" class="img-fluid" />
+              </div>
+              <div class="timeline-content">
+                <h3>Day 9</h3>
+                <p>Set up subscription payments</p>
+              </div>
+            </div>
+
+            <div class="col-md-3 timeline-point">
+              <div class="timeline-icon">
+                <img src="image/day14.webp" alt="Day 14" class="img-fluid" />
+              </div>
+              <div class="timeline-content">
+                <h3>Day 14</h3>
+                <p>Launch your idea!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Comparison Section -->
+      <section class="comparison-section py-10">
+        <div class="container text-center">
+          <h2 class="display-4 fw-bold mb-5">
+            Coding courses are designed for<br />
+            <span class="text-pink">software engineers</span>, not
+            <span class="text-green">entrepreneurs</span>
+          </h2>
+
+          <div class="row justify-content-center gap-4">
+            <!-- Employee Card -->
+            <div class="col-md-5">
+              <div class="comparison-card employee-card">
+                <div class="card-header">
+                  <h3>
+                    Coding as an employee
+                    <svg
+                      class="icon-x"
+                      viewBox="0 0 67 67"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M33.3848 61.208C48.75 61.208 61.2061 48.752 61.2061 33.3867C61.2061 18.0214 48.75 5.56543 33.3848 5.56543C18.0195 5.56543 5.56348 18.0214 5.56348 33.3867C5.56348 48.752 18.0195 61.208 33.3848 61.208Z"
+                        class="fill-red-300 stroke-red-300"
+                        stroke-width="5.56426"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path>
+                      <path
+                        d="M41.7318 25.0391L25.0391 41.7318"
+                        class="stroke-red-900"
+                        stroke-width="5.56426"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path>
+                      <path
+                        d="M25.0391 25.0391L41.7318 41.7318"
+                        class="stroke-red-900"
+                        stroke-width="5.56426"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path>
+                    </svg>
+                  </h3>
                 </div>
-                <p class="text-muted">
-                    <span class="testimonial-count">1,621</span> 
-                    <span class="testimonial-text">entrepreneurs love the course</span>
+                <ul class="list-unstyled text-start">
+                  <li>• Invert binary trees</li>
+                  <li>• Master 47 sorting algorithms you'll never implement</li>
+                  <li>• Memorize Big O notation to impress your interviewer</li>
+                  <li>
+                    • Read documentation longer than The Lord of the Rings
+                  </li>
+                  <li>• Write complex code when a simple AI prompt would do</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Entrepreneur Card -->
+            <div class="col-md-5">
+              <div class="comparison-card entrepreneur-card">
+                <div class="card-header">
+                  <h3>
+                    Coding as an entrepreneur
+                    <svg
+                      class="icon-check"
+                      viewBox="0 0 67 67"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M33.3856 61.207C48.7509 61.207 61.2069 48.751 61.2069 33.3857C61.2069 18.0205 48.7509 5.56445 33.3856 5.56445C18.0203 5.56445 5.56433 18.0205 5.56433 33.3857C5.56433 48.751 18.0203 61.207 33.3856 61.207Z"
+                        class="fill-green-300 stroke-green-300"
+                        stroke-width="5.56426"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path>
+                      <path
+                        d="M25.0391 33.3865L30.6034 38.9508L41.7319 27.8223"
+                        class="stroke-green-900"
+                        stroke-width="5.56426"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path>
+                    </svg>
+                  </h3>
+                </div>
+                <ul class="list-unstyled text-start">
+                  <li>• Learn only the fundamentals</li>
+                  <li>• Use AI to code for you</li>
+                  <li>• Keep learning on the fly</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Learning Flywheel Section -->
+      <section class="flywheel-section py-8">
+        <div class="container text-center">
+          <div class="warning-text mb-4">
+            <span class="icon">🚫</span> Instead of watching 100 hours of
+            "JavaScript Basics" videos...
+          </div>
+
+          <div class="flywheel-content">
+            <div class="flywheel-diagram">
+              <!-- Top -->
+              <div class="flywheel-item item-top">
+                <img src="image/book.webp" alt="Book" class="rotate-n3" />
+                <span>Learn what you need</span>
+              </div>
+
+              <!-- Right -->
+              <div class="flywheel-item item-right">
+                <img src="image/bolt.webp" alt="Bolt" class="rotate-3" />
+                <span>Build features</span>
+              </div>
+
+              <!-- Bottom -->
+              <div class="flywheel-item item-bottom">
+                <img src="image/rocket.webp" alt="Rocket" class="rotate-n6" />
+                <span>Launch</span>
+              </div>
+
+              <!-- Left -->
+              <div class="flywheel-item item-left">
+                <img src="image/bulb.webp" alt="Bulb" />
+                <span>Get feedback</span>
+              </div>
+
+              <!-- SVG Arrows -->
+              <div class="arrow arrow-1">
+                <svg class="arrow-svg" viewBox="0 0 251 81">
+                  <path
+                    d="M14.4435 26.0257C16.3478 34.2205 18.0405 42.2052 20.1564 51.2405C14.6551 50.6101 11.4813 47.2481 10.2118 43.4659C6.40317 32.1193 2.80615 20.5625 0.267089 8.79558C-1.21404 2.07164 3.65251 -1.50048 10.2118 0.600755C21.2144 3.96273 32.0054 7.95508 43.0081 11.7373C43.6428 11.9474 44.4892 12.1576 44.7008 12.5778C45.7587 14.0487 46.3935 15.7296 47.2398 17.4106C45.7587 18.041 44.2776 19.5119 43.0081 19.3017C38.5647 18.6714 34.3329 17.6208 30.1011 16.7803C27.7737 16.36 25.6577 15.7297 22.2723 16.7803C24.5998 19.3018 26.9273 22.0333 29.2548 24.5548C79.6129 74.5642 155.15 85.0703 217.781 51.2405C225.821 46.8279 233.227 41.5748 241.055 36.742C243.806 35.061 246.557 33.5901 249.307 31.9092C249.942 32.3294 250.365 32.9598 251 33.38C250.365 35.2711 250.154 37.7926 248.673 39.0533C244.018 43.4659 239.363 47.8785 234.073 51.6607C181.599 89.4829 108.601 90.9538 52.1064 54.8126C41.3154 47.8785 31.7938 39.0533 21.8492 31.0686C19.7333 29.3876 18.0406 27.4966 16.1363 25.6054C15.7131 25.3953 15.0783 25.6054 14.4435 26.0257Z"
+                  ></path>
+                </svg>
+              </div>
+              <div class="arrow arrow-2">
+                <svg class="arrow-svg" viewBox="0 0 251 81">
+                  <path
+                    d="M14.4435 26.0257C16.3478 34.2205 18.0405 42.2052 20.1564 51.2405C14.6551 50.6101 11.4813 47.2481 10.2118 43.4659C6.40317 32.1193 2.80615 20.5625 0.267089 8.79558C-1.21404 2.07164 3.65251 -1.50048 10.2118 0.600755C21.2144 3.96273 32.0054 7.95508 43.0081 11.7373C43.6428 11.9474 44.4892 12.1576 44.7008 12.5778C45.7587 14.0487 46.3935 15.7296 47.2398 17.4106C45.7587 18.041 44.2776 19.5119 43.0081 19.3017C38.5647 18.6714 34.3329 17.6208 30.1011 16.7803C27.7737 16.36 25.6577 15.7297 22.2723 16.7803C24.5998 19.3018 26.9273 22.0333 29.2548 24.5548C79.6129 74.5642 155.15 85.0703 217.781 51.2405C225.821 46.8279 233.227 41.5748 241.055 36.742C243.806 35.061 246.557 33.5901 249.307 31.9092C249.942 32.3294 250.365 32.9598 251 33.38C250.365 35.2711 250.154 37.7926 248.673 39.0533C244.018 43.4659 239.363 47.8785 234.073 51.6607C181.599 89.4829 108.601 90.9538 52.1064 54.8126C41.3154 47.8785 31.7938 39.0533 21.8492 31.0686C19.7333 29.3876 18.0406 27.4966 16.1363 25.6054C15.7131 25.3953 15.0783 25.6054 14.4435 26.0257Z"
+                  ></path>
+                </svg>
+              </div>
+              <div class="arrow arrow-3">
+                <svg class="arrow-svg" viewBox="0 0 251 81">
+                  <path
+                    d="M14.4435 26.0257C16.3478 34.2205 18.0405 42.2052 20.1564 51.2405C14.6551 50.6101 11.4813 47.2481 10.2118 43.4659C6.40317 32.1193 2.80615 20.5625 0.267089 8.79558C-1.21404 2.07164 3.65251 -1.50048 10.2118 0.600755C21.2144 3.96273 32.0054 7.95508 43.0081 11.7373C43.6428 11.9474 44.4892 12.1576 44.7008 12.5778C45.7587 14.0487 46.3935 15.7296 47.2398 17.4106C45.7587 18.041 44.2776 19.5119 43.0081 19.3017C38.5647 18.6714 34.3329 17.6208 30.1011 16.7803C27.7737 16.36 25.6577 15.7297 22.2723 16.7803C24.5998 19.3018 26.9273 22.0333 29.2548 24.5548C79.6129 74.5642 155.15 85.0703 217.781 51.2405C225.821 46.8279 233.227 41.5748 241.055 36.742C243.806 35.061 246.557 33.5901 249.307 31.9092C249.942 32.3294 250.365 32.9598 251 33.38C250.365 35.2711 250.154 37.7926 248.673 39.0533C244.018 43.4659 239.363 47.8785 234.073 51.6607C181.599 89.4829 108.601 90.9538 52.1064 54.8126C41.3154 47.8785 31.7938 39.0533 21.8492 31.0686C19.7333 29.3876 18.0406 27.4966 16.1363 25.6054C15.7131 25.3953 15.0783 25.6054 14.4435 26.0257Z"
+                  ></path>
+                </svg>
+              </div>
+              <div class="arrow arrow-4">
+                <svg class="arrow-svg" viewBox="0 0 251 81">
+                  <path
+                    d="M14.4435 26.0257C16.3478 34.2205 18.0405 42.2052 20.1564 51.2405C14.6551 50.6101 11.4813 47.2481 10.2118 43.4659C6.40317 32.1193 2.80615 20.5625 0.267089 8.79558C-1.21404 2.07164 3.65251 -1.50048 10.2118 0.600755C21.2144 3.96273 32.0054 7.95508 43.0081 11.7373C43.6428 11.9474 44.4892 12.1576 44.7008 12.5778C45.7587 14.0487 46.3935 15.7296 47.2398 17.4106C45.7587 18.041 44.2776 19.5119 43.0081 19.3017C38.5647 18.6714 34.3329 17.6208 30.1011 16.7803C27.7737 16.36 25.6577 15.7297 22.2723 16.7803C24.5998 19.3018 26.9273 22.0333 29.2548 24.5548C79.6129 74.5642 155.15 85.0703 217.781 51.2405C225.821 46.8279 233.227 41.5748 241.055 36.742C243.806 35.061 246.557 33.5901 249.307 31.9092C249.942 32.3294 250.365 32.9598 251 33.38C250.365 35.2711 250.154 37.7926 248.673 39.0533C244.018 43.4659 239.363 47.8785 234.073 51.6607C181.599 89.4829 108.601 90.9538 52.1064 54.8126C41.3154 47.8785 31.7938 39.0533 21.8492 31.0686C19.7333 29.3876 18.0406 27.4966 16.1363 25.6054C15.7131 25.3953 15.0783 25.6054 14.4435 26.0257Z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <h2 class="display-4 fw-bolder mt-5">
+            Start a learning <span class="highlight">flywheel</span>
+          </h2>
+          <p class="lead text-muted mb-5">
+            Code like an entrepreneur — build your idea in<br />
+            14 days to get real-world feedback and keep<br />
+            learning as you go.
+          </p>
+
+          <button class="btn btn-primary btn-lg rounded-pill">
+            Get instant access
+          </button>
+          <div class="text-muted mt-3">
+            <span class="check-icon">✓</span> No experience needed
+          </div>
+        </div>
+      </section>
+      <!-- Testimonial Section -->
+      <section class="testimonial-section py-8">
+        <div class="container">
+          <div class="testimonial-content">
+            <div class="testimonial-header d-flex align-items-start gap-4 mb-4">
+              <img
+                src="image/avatar1.webp"
+                alt="User Avatar"
+                class="testimonial-avatar"
+              />
+              <div class="testimonial-text">
+                <div class="quote mb-1">
+                  <div class="quote-container">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      class="quote-svg"
+                    >
+                      <path
+                        d="M8.5 13.5C8.5 16.2614 6.26142 18.5 3.5 18.5C2.94772 18.5 2.5 18.9477 2.5 19.5C2.5 20.0523 2.94772 20.5 3.5 20.5C7.36599 20.5 10.5 17.366 10.5 13.5V5.75C10.5 4.23122 9.26878 3 7.75 3H3.75C2.23122 3 1 4.23122 1 5.75V9.75C1 11.2688 2.23122 12.5 3.75 12.5H7.75C8.01001 12.5 8.26158 12.4639 8.5 12.3965V13.5Z"
+                        fill="currentColor"
+                      ></path>
+                      <path
+                        d="M20.5 13.5C20.5 16.2614 18.2614 18.5 15.5 18.5C14.9477 18.5 14.5 18.9477 14.5 19.5C14.5 20.0523 14.9477 20.5 15.5 20.5C19.366 20.5 22.5 17.366 22.5 13.5V5.75C22.5 4.23122 21.2688 3 19.75 3H15.75C14.2312 3 13 4.23122 13 5.75V9.75C13 11.2688 14.2312 12.5 15.75 12.5H19.75C20.01 12.5 20.2616 12.4639 20.5 12.3965V13.5Z"
+                        fill="currentColor"
+                      ></path>
+                    </svg>
+                    <p class="quote-text">
+                      <span class="highlight"
+                        >First sale is definitely special,</span
+                      >
+                      <span class="second-line"
+                        >especially when it's<br />your first self coded
+                        web-app. Thank you @marclou</span
+                      >
+                    </p>
+                  </div>
+                </div>
+                <div class="author">—Jainil</div>
+              </div>
+            </div>
+            <div class="built-info mb-2">
+              Built <a href="#" class="built-link">confettisaas.pro</a>,
+              <a href="#" class="built-link">epictravelphotos.pro</a> & more
+              <svg
+                class="arrow-down"
+                width="251"
+                height="251"
+                viewBox="0 0 251 81"
+              >
+                <path
+                  d="M14.4435 26.0257C16.3478 34.2205 18.0405 42.2052 20.1564 51.2405C14.6551 50.6101 11.4813 47.2481 10.2118 43.4659C6.40317 32.1193 2.80615 20.5625 0.267089 8.79558C-1.21404 2.07164 3.65251 -1.50048 10.2118 0.600755C21.2144 3.96273 32.0054 7.95508 43.0081 11.7373C43.6428 11.9474 44.4892 12.1576 44.7008 12.5778C45.7587 14.0487 46.3935 15.7296 47.2398 17.4106C45.7587 18.041 44.2776 19.5119 43.0081 19.3017C38.5647 18.6714 34.3329 17.6208 30.1011 16.7803C27.7737 16.36 25.6577 15.7297 22.2723 16.7803C24.5998 19.3018 26.9273 22.0333 29.2548 24.5548C79.6129 74.5642 155.15 85.0703 217.781 51.2405C225.821 46.8279 233.227 41.5748 241.055 36.742C243.806 35.061 246.557 33.5901 249.307 31.9092C249.942 32.3294 250.365 32.9598 251 33.38C250.365 35.2711 250.154 37.7926 248.673 39.0533C244.018 43.4659 239.363 47.8785 234.073 51.6607C181.599 89.4829 108.601 90.9538 52.1064 54.8126C41.3154 47.8785 31.7938 39.0533 21.8492 31.0686C19.7333 29.3876 18.0406 27.4966 16.1363 25.6054C15.7131 25.3953 15.0783 25.6054 14.4435 26.0257Z"
+                ></path>
+              </svg>
+            </div>
+            <div class="macbook-container">
+              <img
+                src="image/macbook.webp"
+                alt="Macbook Frame"
+                class="macbook-frame"
+              />
+              <div class="screen-content">
+                <img
+                  src="image/epictravelphoto.gif"
+                  alt="Epic Travel Photos Demo"
+                  class="screen-img"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Course Content Section -->
+      <section class="course-content">
+        <div class="container">
+          <h1 class="text-center course-title">
+            From 0 to SaaS in <span class="highlight">12 hours</span> of video
+          </h1>
+          <p class="text-center course-subtitle">
+            Everything you need to build an online business, even if you have no
+            experience
+          </p>
+
+          <div class="grid-container">
+            <!-- The Mindset -->
+            <div class="grid-item mindset">
+              <span class="badge badge-blue">15 minutes</span>
+              <img
+                src="image/bulb.webp"
+                alt="The Mindset"
+                class="content-icon"
+              />
+              <div class="content-header">
+                <div class="title-badge">
+                  <h3>1. The Mindset</h3>
+                </div>
+                <p class="subtitle">
+                  Learn to code as an entrepreneur, not an employee
                 </p>
+              </div>
+              <ul class="feature-list">
+                <li>
+                  <span class="check-icon">✓</span>How to ship products fast
+                </li>
+                <li>
+                  <span class="check-icon">✓</span>How to make money with code
+                </li>
+                <li>
+                  <span class="check-icon">✓</span>Finding motivation to build
+                </li>
+              </ul>
             </div>
-        </section>
 
-        <!-- Timeline Section -->
-        <section class="timeline">
-            <div class="container position-relative">
-                <!-- Progress Line -->
-                <div class="timeline-line"></div>
-                
-                <div class="row justify-content-between position-relative">
-                    <div class="col-md-3 timeline-point">
-                        <div class="timeline-icon">
-                            <img src="image/day1.webp" alt="Day 1" class="img-fluid">
-                        </div>
-                        <div class="timeline-content">
-                            <h3>Day 1</h3>
-                            <p>Learn the fundamentals of coding</p>
-                        </div>
-                    </div>
-                    
-                    <div class="col-md-3 timeline-point">
-                        <div class="timeline-icon">
-                            <img src="image/day4.webp" alt="Day 4" class="img-fluid">
-                        </div>
-                        <div class="timeline-content">
-                            <h3>Day 4</h3>
-                            <p>Log in users and save in database</p>
-                        </div>
-                    </div>
-                    
-                    <div class="col-md-3 timeline-point">
-                        <div class="timeline-icon">
-                            <img src="image/day9.webp" alt="Day 9" class="img-fluid">
-                        </div>
-                        <div class="timeline-content">
-                            <h3>Day 9</h3>
-                            <p>Set up subscription payments</p>
-                        </div>
-                    </div>
-                    
-                    <div class="col-md-3 timeline-point">
-                        <div class="timeline-icon">
-                            <img src="image/day14.webp" alt="Day 14" class="img-fluid">
-                        </div>
-                        <div class="timeline-content">
-                            <h3>Day 14</h3>
-                            <p>Launch your idea!</p>
-                        </div>
-                    </div>
+            <!-- The Fundamentals -->
+            <div class="grid-item fundamentals">
+              <span class="badge badge-orange">1 hour 15 minutes</span>
+              <img
+                src="image/house-construction.webp"
+                alt="The Fundamentals"
+                class="content-icon"
+              />
+              <div class="content-header">
+                <div class="title-badge">
+                  <h3>2. The Fundamentals</h3>
                 </div>
-            </div>
-        </section>
-
-        <!-- Comparison Section -->
-        <section class="comparison-section py-10">
-            <div class="container text-center">
-                <h2 class="display-4 fw-bold mb-5">
-                    Coding courses are designed for<br>
-                    <span class="text-pink">software engineers</span>, not <span class="text-green">entrepreneurs</span>
-                </h2>
-                
-                <div class="row justify-content-center gap-4">
-                    <!-- Employee Card -->
-                    <div class="col-md-5">
-                        <div class="comparison-card employee-card">
-                            <div class="card-header">
-                                <h3>Coding as an employee 
-                                    <svg class="icon-x" viewBox="0 0 67 67" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M33.3848 61.208C48.75 61.208 61.2061 48.752 61.2061 33.3867C61.2061 18.0214 48.75 5.56543 33.3848 5.56543C18.0195 5.56543 5.56348 18.0214 5.56348 33.3867C5.56348 48.752 18.0195 61.208 33.3848 61.208Z" class="fill-red-300 stroke-red-300" stroke-width="5.56426" stroke-linecap="round" stroke-linejoin="round"></path>
-                                        <path d="M41.7318 25.0391L25.0391 41.7318" class="stroke-red-900" stroke-width="5.56426" stroke-linecap="round" stroke-linejoin="round"></path>
-                                        <path d="M25.0391 25.0391L41.7318 41.7318" class="stroke-red-900" stroke-width="5.56426" stroke-linecap="round" stroke-linejoin="round"></path>
-                                    </svg>
-                                </h3>
-                            </div>
-                            <ul class="list-unstyled text-start">
-                                <li>• Invert binary trees</li>
-                                <li>• Master 47 sorting algorithms you'll never implement</li>
-                                <li>• Memorize Big O notation to impress your interviewer</li>
-                                <li>• Read documentation longer than The Lord of the Rings</li>
-                                <li>• Write complex code when a simple AI prompt would do</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- Entrepreneur Card -->
-                    <div class="col-md-5">
-                        <div class="comparison-card entrepreneur-card">
-                            <div class="card-header">
-                                <h3>Coding as an entrepreneur
-                                    <svg class="icon-check" viewBox="0 0 67 67" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M33.3856 61.207C48.7509 61.207 61.2069 48.751 61.2069 33.3857C61.2069 18.0205 48.7509 5.56445 33.3856 5.56445C18.0203 5.56445 5.56433 18.0205 5.56433 33.3857C5.56433 48.751 18.0203 61.207 33.3856 61.207Z" class="fill-green-300 stroke-green-300" stroke-width="5.56426" stroke-linecap="round" stroke-linejoin="round"></path>
-                                        <path d="M25.0391 33.3865L30.6034 38.9508L41.7319 27.8223" class="stroke-green-900" stroke-width="5.56426" stroke-linecap="round" stroke-linejoin="round"></path>
-                                    </svg>
-                                </h3>
-                            </div>
-                            <ul class="list-unstyled text-start">
-                                <li>• Learn only the fundamentals</li>
-                                <li>• Use AI to code for you</li>
-                                <li>• Keep learning on the fly</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Learning Flywheel Section -->
-        <section class="flywheel-section py-8">
-            <div class="container text-center">
-                <div class="warning-text mb-4">
-                    <span class="icon">🚫</span> Instead of watching 100 hours of "JavaScript Basics" videos...
-                </div>
-
-                <div class="flywheel-content">
-                    <div class="flywheel-diagram">
-                        <!-- Top -->
-                        <div class="flywheel-item item-top">
-                            <img src="image/book.webp" alt="Book" class="rotate-n3">
-                            <span>Learn what you need</span>
-                        </div>
-                        
-                        <!-- Right -->
-                        <div class="flywheel-item item-right">
-                            <img src="image/bolt.webp" alt="Bolt" class="rotate-3">
-                            <span>Build features</span>
-                        </div>
-                        
-                        <!-- Bottom -->
-                        <div class="flywheel-item item-bottom">
-                            <img src="image/rocket.webp" alt="Rocket" class="rotate-n6">
-                            <span>Launch</span>
-                        </div>
-                        
-                        <!-- Left -->
-                        <div class="flywheel-item item-left">
-                            <img src="image/bulb.webp" alt="Bulb">
-                            <span>Get feedback</span>
-                        </div>
-
-                        <!-- SVG Arrows -->
-                        <div class="arrow arrow-1">
-                            <svg class="arrow-svg" viewBox="0 0 251 81">
-                                <path d="M14.4435 26.0257C16.3478 34.2205 18.0405 42.2052 20.1564 51.2405C14.6551 50.6101 11.4813 47.2481 10.2118 43.4659C6.40317 32.1193 2.80615 20.5625 0.267089 8.79558C-1.21404 2.07164 3.65251 -1.50048 10.2118 0.600755C21.2144 3.96273 32.0054 7.95508 43.0081 11.7373C43.6428 11.9474 44.4892 12.1576 44.7008 12.5778C45.7587 14.0487 46.3935 15.7296 47.2398 17.4106C45.7587 18.041 44.2776 19.5119 43.0081 19.3017C38.5647 18.6714 34.3329 17.6208 30.1011 16.7803C27.7737 16.36 25.6577 15.7297 22.2723 16.7803C24.5998 19.3018 26.9273 22.0333 29.2548 24.5548C79.6129 74.5642 155.15 85.0703 217.781 51.2405C225.821 46.8279 233.227 41.5748 241.055 36.742C243.806 35.061 246.557 33.5901 249.307 31.9092C249.942 32.3294 250.365 32.9598 251 33.38C250.365 35.2711 250.154 37.7926 248.673 39.0533C244.018 43.4659 239.363 47.8785 234.073 51.6607C181.599 89.4829 108.601 90.9538 52.1064 54.8126C41.3154 47.8785 31.7938 39.0533 21.8492 31.0686C19.7333 29.3876 18.0406 27.4966 16.1363 25.6054C15.7131 25.3953 15.0783 25.6054 14.4435 26.0257Z"></path>
-                            </svg>
-                            
-                        </div>
-                        <div class="arrow arrow-2">
-                            <svg class="arrow-svg" viewBox="0 0 251 81">
-                                <path d="M14.4435 26.0257C16.3478 34.2205 18.0405 42.2052 20.1564 51.2405C14.6551 50.6101 11.4813 47.2481 10.2118 43.4659C6.40317 32.1193 2.80615 20.5625 0.267089 8.79558C-1.21404 2.07164 3.65251 -1.50048 10.2118 0.600755C21.2144 3.96273 32.0054 7.95508 43.0081 11.7373C43.6428 11.9474 44.4892 12.1576 44.7008 12.5778C45.7587 14.0487 46.3935 15.7296 47.2398 17.4106C45.7587 18.041 44.2776 19.5119 43.0081 19.3017C38.5647 18.6714 34.3329 17.6208 30.1011 16.7803C27.7737 16.36 25.6577 15.7297 22.2723 16.7803C24.5998 19.3018 26.9273 22.0333 29.2548 24.5548C79.6129 74.5642 155.15 85.0703 217.781 51.2405C225.821 46.8279 233.227 41.5748 241.055 36.742C243.806 35.061 246.557 33.5901 249.307 31.9092C249.942 32.3294 250.365 32.9598 251 33.38C250.365 35.2711 250.154 37.7926 248.673 39.0533C244.018 43.4659 239.363 47.8785 234.073 51.6607C181.599 89.4829 108.601 90.9538 52.1064 54.8126C41.3154 47.8785 31.7938 39.0533 21.8492 31.0686C19.7333 29.3876 18.0406 27.4966 16.1363 25.6054C15.7131 25.3953 15.0783 25.6054 14.4435 26.0257Z"></path>
-                            </svg>
-                        </div>
-                        <div class="arrow arrow-3">
-                            <svg class="arrow-svg" viewBox="0 0 251 81">
-                                <path d="M14.4435 26.0257C16.3478 34.2205 18.0405 42.2052 20.1564 51.2405C14.6551 50.6101 11.4813 47.2481 10.2118 43.4659C6.40317 32.1193 2.80615 20.5625 0.267089 8.79558C-1.21404 2.07164 3.65251 -1.50048 10.2118 0.600755C21.2144 3.96273 32.0054 7.95508 43.0081 11.7373C43.6428 11.9474 44.4892 12.1576 44.7008 12.5778C45.7587 14.0487 46.3935 15.7296 47.2398 17.4106C45.7587 18.041 44.2776 19.5119 43.0081 19.3017C38.5647 18.6714 34.3329 17.6208 30.1011 16.7803C27.7737 16.36 25.6577 15.7297 22.2723 16.7803C24.5998 19.3018 26.9273 22.0333 29.2548 24.5548C79.6129 74.5642 155.15 85.0703 217.781 51.2405C225.821 46.8279 233.227 41.5748 241.055 36.742C243.806 35.061 246.557 33.5901 249.307 31.9092C249.942 32.3294 250.365 32.9598 251 33.38C250.365 35.2711 250.154 37.7926 248.673 39.0533C244.018 43.4659 239.363 47.8785 234.073 51.6607C181.599 89.4829 108.601 90.9538 52.1064 54.8126C41.3154 47.8785 31.7938 39.0533 21.8492 31.0686C19.7333 29.3876 18.0406 27.4966 16.1363 25.6054C15.7131 25.3953 15.0783 25.6054 14.4435 26.0257Z"></path>
-                            </svg>
-                        </div>
-                        <div class="arrow arrow-4">
-                            <svg class="arrow-svg" viewBox="0 0 251 81">
-                                <path d="M14.4435 26.0257C16.3478 34.2205 18.0405 42.2052 20.1564 51.2405C14.6551 50.6101 11.4813 47.2481 10.2118 43.4659C6.40317 32.1193 2.80615 20.5625 0.267089 8.79558C-1.21404 2.07164 3.65251 -1.50048 10.2118 0.600755C21.2144 3.96273 32.0054 7.95508 43.0081 11.7373C43.6428 11.9474 44.4892 12.1576 44.7008 12.5778C45.7587 14.0487 46.3935 15.7296 47.2398 17.4106C45.7587 18.041 44.2776 19.5119 43.0081 19.3017C38.5647 18.6714 34.3329 17.6208 30.1011 16.7803C27.7737 16.36 25.6577 15.7297 22.2723 16.7803C24.5998 19.3018 26.9273 22.0333 29.2548 24.5548C79.6129 74.5642 155.15 85.0703 217.781 51.2405C225.821 46.8279 233.227 41.5748 241.055 36.742C243.806 35.061 246.557 33.5901 249.307 31.9092C249.942 32.3294 250.365 32.9598 251 33.38C250.365 35.2711 250.154 37.7926 248.673 39.0533C244.018 43.4659 239.363 47.8785 234.073 51.6607C181.599 89.4829 108.601 90.9538 52.1064 54.8126C41.3154 47.8785 31.7938 39.0533 21.8492 31.0686C19.7333 29.3876 18.0406 27.4966 16.1363 25.6054C15.7131 25.3953 15.0783 25.6054 14.4435 26.0257Z"></path>
-                            </svg>
-                        </div>
-                    </div>
-                </div>
-
-                <h2 class="display-4 fw-bolder mt-5">Start a learning <span class="highlight">flywheel</span></h2>
-                <p class="lead text-muted mb-5">
-                    Code like an entrepreneur — build your idea in<br>
-                    14 days to get real-world feedback and keep<br>
-                    learning as you go.
+                <p class="subtitle">
+                  Everything important about web development so you <br />know
+                  how to tell the AI what to code for you
                 </p>
+              </div>
+              <ul class="feature-list">
+                <li>
+                  <span class="check-icon">✓</span>How the internet works (HTTP,
+                  domain names)
+                </li>
+                <li><span class="check-icon">✓</span>HTML</li>
+                <li><span class="check-icon">✓</span>CSS</li>
+                <li><span class="check-icon">✓</span>JavaScript</li>
+              </ul>
+            </div>
 
-                <button class="btn btn-primary btn-lg rounded-pill">Get instant access</button>
-                <div class="text-muted mt-3">
-                    <span class="check-icon">✓</span> No experience needed
+            <!-- Your First SaaS -->
+            <div class="grid-item saas">
+              <span class="badge badge-green">10 hours 26 minutes</span>
+              <img
+                src="image/castle.webp"
+                alt="Your First SaaS"
+                class="content-icon"
+              />
+              <div class="content-header">
+                <div class="title-badge">
+                  <h3>3. Your First SaaS</h3>
                 </div>
+                <p class="subtitle">
+                  Build and launch a real SaaS business that makes money
+                </p>
+              </div>
+
+              <!-- Frontend Development -->
+              <div class="content-section">
+                <h4>🎨 Frontend Development</h4>
+                <ul class="feature-list three-column">
+                  <li><span class="check-icon">✓</span>Next.js application</li>
+                  <li><span class="check-icon">✓</span>React components</li>
+                  <li><span class="check-icon">✓</span>Tailwind CSS</li>
+                  <li><span class="check-icon">✓</span>UI/UX design</li>
+                  <li><span class="check-icon">✓</span>SVG & icons</li>
+                  <li>
+                    <span class="check-icon">✓</span>Copywriting essentials
+                  </li>
+                  <li><span class="check-icon">✓</span>Images</li>
+                  <li><span class="check-icon">✓</span>Links</li>
+                  <li><span class="check-icon">✓</span>Dynamic pages</li>
+                  <li><span class="check-icon">✓</span>Responsive design</li>
+                  <li><span class="check-icon">✓</span>Buttons</li>
+                  <li><span class="check-icon">✓</span>Form inputs</li>
+                </ul>
+              </div>
+
+              <!-- Backend & Authentication -->
+              <div class="content-section">
+                <h4>🔒 Backend & Authentication</h4>
+                <ul class="feature-list three-column">
+                  <li>
+                    <span class="check-icon">✓</span>Magic link authentication
+                  </li>
+                  <li><span class="check-icon">✓</span>Google OAuth login</li>
+                  <li>
+                    <span class="check-icon">✓</span>Database with MongoDB
+                  </li>
+                  <li><span class="check-icon">✓</span>API routes</li>
+                  <li><span class="check-icon">✓</span>Backend VS. Frontend</li>
+                  <li><span class="check-icon">✓</span>Cookies</li>
+                  <li><span class="check-icon">✓</span>Data structures</li>
+                  <li>
+                    <span class="check-icon">✓</span>Private user dashboard
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Business & Deployment -->
+              <div class="content-section">
+                <h4>🚀 Business & Deployment</h4>
+                <ul class="feature-list three-column">
+                  <li><span class="check-icon">✓</span>Stripe subscriptions</li>
+                  <li>
+                    <span class="check-icon">✓</span>LemonSqueezy subscriptions
+                  </li>
+                  <li><span class="check-icon">✓</span>Emails</li>
+                  <li><span class="check-icon">✓</span>Domain names</li>
+                  <li><span class="check-icon">✓</span>DNS</li>
+                  <li><span class="check-icon">✓</span>Server hosting</li>
+                </ul>
+              </div>
+
+              <!-- Developer Tools & Skills -->
+              <div class="content-section">
+                <h4>🛠️ Developer Tools & Skills</h4>
+                <ul class="feature-list three-column">
+                  <li>
+                    <span class="check-icon">✓</span>SEO
+                    <span class="coming-soon">(coming soon)</span>
+                  </li>
+                  <li><span class="check-icon">✓</span>AI-powered coding 🤖</li>
+                  <li><span class="check-icon">✓</span>Git & GitHub</li>
+                  <li><span class="check-icon">✓</span>Node.js</li>
+                  <li><span class="check-icon">✓</span>AI-powered design 🤖</li>
+                  <li>
+                    <span class="check-icon">✓</span>Security best practices
+                  </li>
+                  <li><span class="check-icon">✓</span>npm</li>
+                  <li><span class="check-icon">✓</span>Terminal</li>
+                  <li><span class="check-icon">✓</span>VSCode extensions</li>
+                </ul>
+              </div>
             </div>
-        </section>
-        <!-- Testimonial Section -->
-        <section class="testimonial-section py-8">
-            <div class="container">
-                <div class="testimonial-content">
-                    <div class="testimonial-header d-flex align-items-start gap-4 mb-4">
-                        <img src="image/avatar1.webp" alt="User Avatar" class="testimonial-avatar">
-                        <div class="testimonial-text">
-                            <div class="quote mb-1">
-                                <div class="quote-container">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="quote-svg">
-                                        <path d="M8.5 13.5C8.5 16.2614 6.26142 18.5 3.5 18.5C2.94772 18.5 2.5 18.9477 2.5 19.5C2.5 20.0523 2.94772 20.5 3.5 20.5C7.36599 20.5 10.5 17.366 10.5 13.5V5.75C10.5 4.23122 9.26878 3 7.75 3H3.75C2.23122 3 1 4.23122 1 5.75V9.75C1 11.2688 2.23122 12.5 3.75 12.5H7.75C8.01001 12.5 8.26158 12.4639 8.5 12.3965V13.5Z" fill="currentColor"></path>
-                                        <path d="M20.5 13.5C20.5 16.2614 18.2614 18.5 15.5 18.5C14.9477 18.5 14.5 18.9477 14.5 19.5C14.5 20.0523 14.9477 20.5 15.5 20.5C19.366 20.5 22.5 17.366 22.5 13.5V5.75C22.5 4.23122 21.2688 3 19.75 3H15.75C14.2312 3 13 4.23122 13 5.75V9.75C13 11.2688 14.2312 12.5 15.75 12.5H19.75C20.01 12.5 20.2616 12.4639 20.5 12.3965V13.5Z" fill="currentColor"></path>
-                                    </svg>
-                                    <p class="quote-text">
-                                        <span class="highlight">First sale is definitely special,</span>
-                                        <span class="second-line">especially when it's<br>your first self coded web-app. Thank you @marclou</span>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="author">—Jainil</div>
-                        </div>
-                    </div>
-                    <div class="built-info mb-2">
-                        Built <a href="#" class="built-link">confettisaas.pro</a>, <a href="#" class="built-link">epictravelphotos.pro</a> & more
-                        <svg class="arrow-down" width="251" height="251" viewBox="0 0 251 81">
-                            <path d="M14.4435 26.0257C16.3478 34.2205 18.0405 42.2052 20.1564 51.2405C14.6551 50.6101 11.4813 47.2481 10.2118 43.4659C6.40317 32.1193 2.80615 20.5625 0.267089 8.79558C-1.21404 2.07164 3.65251 -1.50048 10.2118 0.600755C21.2144 3.96273 32.0054 7.95508 43.0081 11.7373C43.6428 11.9474 44.4892 12.1576 44.7008 12.5778C45.7587 14.0487 46.3935 15.7296 47.2398 17.4106C45.7587 18.041 44.2776 19.5119 43.0081 19.3017C38.5647 18.6714 34.3329 17.6208 30.1011 16.7803C27.7737 16.36 25.6577 15.7297 22.2723 16.7803C24.5998 19.3018 26.9273 22.0333 29.2548 24.5548C79.6129 74.5642 155.15 85.0703 217.781 51.2405C225.821 46.8279 233.227 41.5748 241.055 36.742C243.806 35.061 246.557 33.5901 249.307 31.9092C249.942 32.3294 250.365 32.9598 251 33.38C250.365 35.2711 250.154 37.7926 248.673 39.0533C244.018 43.4659 239.363 47.8785 234.073 51.6607C181.599 89.4829 108.601 90.9538 52.1064 54.8126C41.3154 47.8785 31.7938 39.0533 21.8492 31.0686C19.7333 29.3876 18.0406 27.4966 16.1363 25.6054C15.7131 25.3953 15.0783 25.6054 14.4435 26.0257Z"></path>
-                        </svg>
-                    </div>
-                    <div class="macbook-container">
-                        <img src="image/macbook.webp" alt="Macbook Frame" class="macbook-frame">
-                        <div class="screen-content">
-                            <img src="image/epictravelphoto.gif" alt="Epic Travel Photos Demo" class="screen-img">
-                        </div>
-                    </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Preview Button Section -->
+      <section class="preview-section">
+        <div class="container text-center">
+          <a href="#" class="preview-button"> Watch a preview 👀 </a>
+        </div>
+      </section>
+
+      <!-- Testimonial Section -->
+      <section class="testimonial-section py-8">
+        <div class="container">
+          <div class="testimonial-content">
+            <div class="testimonial-header d-flex align-items-start gap-4 mb-4">
+              <img
+                src="image/avatar2.webp"
+                alt="User Avatar"
+                class="testimonial-avatar"
+              />
+              <div class="testimonial-text">
+                <div class="quote mb-1">
+                  <div class="quote-container">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      class="quote-svg"
+                    >
+                      <path
+                        d="M8.5 13.5C8.5 16.2614 6.26142 18.5 3.5 18.5C2.94772 18.5 2.5 18.9477 2.5 19.5C2.5 20.0523 2.94772 20.5 3.5 20.5C7.36599 20.5 10.5 17.366 10.5 13.5V5.75C10.5 4.23122 9.26878 3 7.75 3H3.75C2.23122 3 1 4.23122 1 5.75V9.75C1 11.2688 2.23122 12.5 3.75 12.5H7.75C8.01001 12.5 8.26158 12.4639 8.5 12.3965V13.5Z"
+                        fill="currentColor"
+                      ></path>
+                      <path
+                        d="M20.5 13.5C20.5 16.2614 18.2614 18.5 15.5 18.5C14.9477 18.5 14.5 18.9477 14.5 19.5C14.5 20.0523 14.9477 20.5 15.5 20.5C19.366 20.5 22.5 17.366 22.5 13.5V5.75C22.5 4.23122 21.2688 3 19.75 3H15.75C14.2312 3 13 4.23122 13 5.75V9.75C13 11.2688 14.2312 12.5 15.75 12.5H19.75C20.01 12.5 20.2616 12.4639 20.5 12.3965V13.5Z"
+                        fill="currentColor"
+                      ></path>
+                    </svg>
+                    <p class="quote-text">
+                      
+                      <span class="second-line"
+                        >I built my app in almost a week. I shared on all social,<br> and I guess people liked it. I got</span
+                      >
+                      <span class="highlight"
+                        >F140 new users and 5<br>paying users ($162.5)</span
+                      >
+                    </p>
+                  </div>
                 </div>
+                <div class="author">—Andrei Bogdan</div>
+              </div>
             </div>
-        </section>
+            <div class="built-info mb-2">
+              Built <a href="#" class="built-link">landingpro.ai</a>,
+              <a href="#" class="built-link">uireplicator.com</a> & 
+              <a href="#" class="built-link">instantseoaudit.com</a>
+              <svg
+                class="arrow-down"
+                width="251"
+                height="251"
+                viewBox="0 0 251 81"
+              >
+                <path
+                  d="M14.4435 26.0257C16.3478 34.2205 18.0405 42.2052 20.1564 51.2405C14.6551 50.6101 11.4813 47.2481 10.2118 43.4659C6.40317 32.1193 2.80615 20.5625 0.267089 8.79558C-1.21404 2.07164 3.65251 -1.50048 10.2118 0.600755C21.2144 3.96273 32.0054 7.95508 43.0081 11.7373C43.6428 11.9474 44.4892 12.1576 44.7008 12.5778C45.7587 14.0487 46.3935 15.7296 47.2398 17.4106C45.7587 18.041 44.2776 19.5119 43.0081 19.3017C38.5647 18.6714 34.3329 17.6208 30.1011 16.7803C27.7737 16.36 25.6577 15.7297 22.2723 16.7803C24.5998 19.3018 26.9273 22.0333 29.2548 24.5548C79.6129 74.5642 155.15 85.0703 217.781 51.2405C225.821 46.8279 233.227 41.5748 241.055 36.742C243.806 35.061 246.557 33.5901 249.307 31.9092C249.942 32.3294 250.365 32.9598 251 33.38C250.365 35.2711 250.154 37.7926 248.673 39.0533C244.018 43.4659 239.363 47.8785 234.073 51.6607C181.599 89.4829 108.601 90.9538 52.1064 54.8126C41.3154 47.8785 31.7938 39.0533 21.8492 31.0686C19.7333 29.3876 18.0406 27.4966 16.1363 25.6054C15.7131 25.3953 15.0783 25.6054 14.4435 26.0257Z"
+                ></path>
+              </svg>
+            </div>
+            <div class="macbook-container">
+              <img
+                src="image/macbook.webp"
+                alt="Macbook Frame"
+                class="macbook-frame"
+              />
+              <div class="screen-content">
+                <img
+                  src="image/epictravelphoto.gif"
+                  alt="Epic Travel Photos Demo"
+                  class="screen-img"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <!-- Course Content Section -->
-        <section class="course-content">
-            <div class="container">
-                <h1 class="text-center course-title">From 0 to SaaS in <span class="highlight">12 hours</span> of video</h1>
-                <p class="text-center course-subtitle">Everything you need to build an online business, even if you have no experience</p>
-                
-                <div class="grid-container">
-                    <!-- The Mindset -->
-                    <div class="grid-item mindset">
-                        <span class="badge badge-blue">15 minutes</span>
-                        <img src="image/bulb.webp" alt="The Mindset" class="content-icon">
-                        <div class="content-header">
-                            <div class="title-badge">
-                                <h3>1. The Mindset</h3>
-                            </div>
-                            <p class="subtitle">Learn to code as an entrepreneur, not an employee</p>
-                        </div>
-                        <ul class="feature-list">
-                            <li><span class="check-icon">✓</span>How to ship products fast</li>
-                            <li><span class="check-icon">✓</span>How to make money with code</li>
-                            <li><span class="check-icon">✓</span>Finding motivation to build</li>
-                        </ul>
-                    </div>
-
-                    <!-- The Fundamentals -->
-                    <div class="grid-item fundamentals">
-                        <span class="badge badge-orange">1 hour 15 minutes</span>
-                        <img src="image/house-construction.webp" alt="The Fundamentals" class="content-icon">
-                        <div class="content-header">
-                            <div class="title-badge">
-                                <h3>2. The Fundamentals</h3>
-                            </div>
-                            <p class="subtitle">Everything important about web development so you <br>know how to tell the AI what to code for you</p>
-                        </div>
-                        <ul class="feature-list">
-                            <li><span class="check-icon">✓</span>How the internet works (HTTP, domain names)</li>
-                            <li><span class="check-icon">✓</span>HTML</li>
-                            <li><span class="check-icon">✓</span>CSS</li>
-                            <li><span class="check-icon">✓</span>JavaScript</li>
-                        </ul>
-                    </div>
-
-                    <!-- Your First SaaS -->
-                    <div class="grid-item saas">
-                        <span class="badge badge-green">10 hours 26 minutes</span>
-                        <img src="image/castle.webp" alt="Your First SaaS" class="content-icon">
-                        <div class="content-header">
-                            <div class="title-badge">
-                                <h3>3. Your First SaaS</h3>
-                            </div>
-                            <p class="subtitle">Build and launch a real SaaS business that makes money</p>
-                        </div>
-
-                        <!-- Frontend Development -->
-                        <div class="content-section">
-                            <h4>🎨 Frontend Development</h4>
-                            <ul class="feature-list three-column">
-                                <li><span class="check-icon">✓</span>Next.js application</li>
-                                <li><span class="check-icon">✓</span>React components</li>
-                                <li><span class="check-icon">✓</span>Tailwind CSS</li>
-                                <li><span class="check-icon">✓</span>UI/UX design</li>
-                                <li><span class="check-icon">✓</span>SVG & icons</li>
-                                <li><span class="check-icon">✓</span>Copywriting essentials</li>
-                                <li><span class="check-icon">✓</span>Images</li>
-                                <li><span class="check-icon">✓</span>Links</li>
-                                <li><span class="check-icon">✓</span>Dynamic pages</li>
-                                <li><span class="check-icon">✓</span>Responsive design</li>
-                                <li><span class="check-icon">✓</span>Buttons</li>
-                                <li><span class="check-icon">✓</span>Form inputs</li>
-                            </ul>
-                        </div>
-
-                        <!-- Backend & Authentication -->
-                        <div class="content-section">
-                            <h4>🔒 Backend & Authentication</h4>
-                            <ul class="feature-list three-column">
-                                <li><span class="check-icon">✓</span>Magic link authentication</li>
-                                <li><span class="check-icon">✓</span>Google OAuth login</li>
-                                <li><span class="check-icon">✓</span>Database with MongoDB</li>
-                                <li><span class="check-icon">✓</span>API routes</li>
-                                <li><span class="check-icon">✓</span>Backend VS. Frontend</li>
-                                <li><span class="check-icon">✓</span>Cookies</li>
-                                <li><span class="check-icon">✓</span>Data structures</li>
-                                <li><span class="check-icon">✓</span>Private user dashboard</li>
-                            </ul>
-                        </div>
-
-                        <!-- Business & Deployment -->
-                        <div class="content-section">
-                            <h4>🚀 Business & Deployment</h4>
-                            <ul class="feature-list three-column">
-                                <li><span class="check-icon">✓</span>Stripe subscriptions</li>
-                                <li><span class="check-icon">✓</span>LemonSqueezy subscriptions</li>
-                                <li><span class="check-icon">✓</span>Emails</li>
-                                <li><span class="check-icon">✓</span>Domain names</li>
-                                <li><span class="check-icon">✓</span>DNS</li>
-                                <li><span class="check-icon">✓</span>Server hosting</li>
-                            </ul>
-                        </div>
-
-                        <!-- Developer Tools & Skills -->
-                        <div class="content-section">
-                            <h4>🛠️ Developer Tools & Skills</h4>
-                            <ul class="feature-list three-column">
-                                <li><span class="check-icon">✓</span>SEO <span class="coming-soon">(coming soon)</span></li>
-                                <li><span class="check-icon">✓</span>AI-powered coding 🤖</li>
-                                <li><span class="check-icon">✓</span>Git & GitHub</li>
-                                <li><span class="check-icon">✓</span>Node.js</li>
-                                <li><span class="check-icon">✓</span>AI-powered design 🤖</li>
-                                <li><span class="check-icon">✓</span>Security best practices</li>
-                                <li><span class="check-icon">✓</span>npm</li>
-                                <li><span class="check-icon">✓</span>Terminal</li>
-                                <li><span class="check-icon">✓</span>VSCode extensions</li>
-                            </ul>
-                        </div>
-                    </div>
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="container">
+          <div class="row text-center text-md-start">
+            <div class="col-12 col-md-4 mb-4 mb-md-0">
+              <div
+                class="d-flex align-items-center justify-content-center justify-content-md-start mb-3"
+              >
+                <div class="logo-container me-2">
+                  <img
+                    src="image/icon.webp"
+                    width="32"
+                    height="32"
+                    alt="CodeFast Logo"
+                  />
                 </div>
+                <span class="fw-semibold">CodeFast</span>
+              </div>
+              <p>Learn to code in weeks, not months.</p>
+              <p>Made with ☕️ and 🥐 by Marc</p>
+              <div class="built-with mt-3">
+                <span class="badge">Built with ⚡️ ShipFast</span>
+              </div>
+              <p class="copyright mt-3">
+                Copyright © 2024 - All rights reserved
+              </p>
             </div>
-        </section>
-
-        <!-- Preview Button Section -->
-        <section class="preview-section">
-            <div class="container text-center">
-                <a href="#" class="preview-button">
-                    Watch a preview 👀
-                </a>
-            </div>
-        </section>
-
-        <!-- Footer -->
-        <footer class="footer">
-            <div class="container">
-                <div class="row text-center text-md-start">
-                    <div class="col-12 col-md-4 mb-4 mb-md-0">
-                        <div class="d-flex align-items-center justify-content-center justify-content-md-start mb-3">
-                            <div class="logo-container me-2">
-                                <img src="image/icon.webp" width="32" height="32" alt="CodeFast Logo">
-                            </div>
-                            <span class="fw-semibold">CodeFast</span>
-                        </div>
-                        <p>Learn to code in weeks, not months.</p>
-                        <p>Made with ☕️ and 🥐 by Marc</p>
-                        <div class="built-with mt-3">
-                            <span class="badge">Built with ⚡️ ShipFast</span>
-                        </div>
-                        <p class="copyright mt-3">Copyright © 2024 - All rights reserved</p>
-                    </div>
-                    <div class="col-12 col-md-8">
-                        <div class="row text-center text-md-start">
-                            <div class="col-12 col-md-4 mb-4 mb-md-0">
-                                <h5>LINKS</h5>
-                                <ul class="list-unstyled">
-                                    <li><a href="/support">Support</a></li>
-                                    <li><a href="/pricing">Pricing</a></li>
-                                    <li><a href="/course">Course</a></li>
-                                    <li><a href="/reviews">Reviews & Case Studies</a></li>
-                                    <li><a href="/affiliate">Affiliate (Earn up to $150)</a></li>
-                                </ul>
-                            </div>
-                            <div class="col-12 col-md-4 mb-4 mb-md-0">
-                                <h5>LEGAL</h5>
-                                <ul class="list-unstyled">
-                                    <li><a href="/terms.html">Terms of services</a></li>
-                                    <li><a href="/privacy.html">Privacy policy</a></li>
-                                </ul>
-                            </div>
-                            <div class="col-12 col-md-4">
-                                <h5>BY THE MAKER OF THIS SITE</h5>
-                                <ul class="list-unstyled">
-                                    <li><a href="#">Newsletter for makers</a></li>
-                                    <li><a href="#">ByeDispute</a></li>
-                                    <li><a href="#">IndiePage</a></li>
-                                    <li><a href="#">ZenVoice</a></li>
-                                    <li><a href="#">GamifyList</a></li>
-                                    <li><a href="#">WorkbookPDF</a></li>
-                                    <li><a href="#">HabitsGarden</a></li>
-                                    <li><a href="#">ShipFast</a></li>
-                                    <li><a href="#">DataFast</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+            <div class="col-12 col-md-8">
+              <div class="row text-center text-md-start">
+                <div class="col-12 col-md-4 mb-4 mb-md-0">
+                  <h5>LINKS</h5>
+                  <ul class="list-unstyled">
+                    <li><a href="/support">Support</a></li>
+                    <li><a href="/pricing">Pricing</a></li>
+                    <li><a href="/course">Course</a></li>
+                    <li><a href="/reviews">Reviews & Case Studies</a></li>
+                    <li>
+                      <a href="/affiliate">Affiliate (Earn up to $150)</a>
+                    </li>
+                  </ul>
                 </div>
+                <div class="col-12 col-md-4 mb-4 mb-md-0">
+                  <h5>LEGAL</h5>
+                  <ul class="list-unstyled">
+                    <li><a href="/terms.html">Terms of services</a></li>
+                    <li><a href="/privacy.html">Privacy policy</a></li>
+                  </ul>
+                </div>
+                <div class="col-12 col-md-4">
+                  <h5>BY THE MAKER OF THIS SITE</h5>
+                  <ul class="list-unstyled">
+                    <li><a href="#">Newsletter for makers</a></li>
+                    <li><a href="#">ByeDispute</a></li>
+                    <li><a href="#">IndiePage</a></li>
+                    <li><a href="#">ZenVoice</a></li>
+                    <li><a href="#">GamifyList</a></li>
+                    <li><a href="#">WorkbookPDF</a></li>
+                    <li><a href="#">HabitsGarden</a></li>
+                    <li><a href="#">ShipFast</a></li>
+                    <li><a href="#">DataFast</a></li>
+                  </ul>
+                </div>
+              </div>
             </div>
-        </footer>
+          </div>
+        </div>
+      </footer>
     </main>
 
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
-</body>
-</html> 
+  </body>
+</html>

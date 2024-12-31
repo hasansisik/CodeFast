@@ -926,6 +926,7 @@ footer a:hover {
     display: inline;
     z-index: 1;
     font-size: 1.4rem;
+    background-color: rgb(254, 249, 195);
 }
 
 .quote-text .comma {
