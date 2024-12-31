@@ -1,0 +1,70 @@
+/* Media Queries */
+@media (max-width: 991px) {
+    .navbar-brand {
+        flex-shrink: 0;
+    }
+    
+    .navbar-collapse {
+        position: absolute;
+        top: 100%;
+        right: 1rem;
+        width: auto;
+        min-width: 300px;
+        background: white;
+        padding: 1rem;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar-nav {
+        position: static;
+        transform: none;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .navbar-nav .nav-link {
+        padding: 0.5rem 1rem !important;
+    }
+
+    .d-flex.align-items-center.gap-2 {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .d-flex.align-items-center.gap-2 .btn {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-item.mindset {
+        border-right: none;
+    }
+
+    .feature-list.three-column {
+        grid-template-columns: 1fr;
+    }
+
+    .content-icon {
+        width: 144px;
+        height: 144px;
+    }
+
+    .teacher-intro .intro-text {
+        font-size: 1.25rem;
+    }
+    
+    .story-list {
+        font-size: 1rem;
+    }
+    
+    .story-image {
+        max-width: 100%;
+    }
+} 

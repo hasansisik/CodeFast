@@ -1,0 +1,93 @@
+/* Comparison Section Styles */
+.comparison-section {
+    background-color: #121212;
+    color: white;
+    padding: 192px 0;
+}
+
+.comparison-section h2 {
+    font-size: 3.2rem;
+    line-height: 1.2;
+    margin-bottom: 64px;
+}
+
+.text-pink {
+    font-style: italic;
+    color: #d78a8a;
+}
+
+.text-green {
+    font-style: italic;
+    color: #85e082;
+}
+
+.comparison-card {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 1.5rem;
+    padding: 2rem;
+    height: 100%;
+    border: 0.125rem solid rgba(255, 255, 255, 0.1);
+}
+
+.comparison-card .card-header {
+    margin-bottom: 1.5rem;
+}
+
+.comparison-card h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+}
+
+.icon-x, .icon-check {
+    width: 2rem;
+    height: 2rem;
+}
+
+.fill-red-300 {
+    fill: #fca5a5;
+}
+
+.stroke-red-300 {
+    stroke: #fca5a5;
+}
+
+.stroke-red-900 {
+    stroke: #7f1d1d;
+}
+
+.fill-green-300 {
+    fill: #86efac;
+}
+
+.stroke-green-300 {
+    stroke: #86efac;
+}
+
+.stroke-green-900 {
+    stroke: #14532d;
+}
+
+.comparison-card ul li {
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 1rem;
+    font-size: 1.125rem;
+    line-height: 1.5;
+}
+
+.employee-card {
+    background-color: rgba(69, 10, 10, 0.1);
+    border-color: rgb(252, 165, 165);
+    border-width: 0.125rem;
+    color: rgb(252, 165, 165);
+}
+
+.entrepreneur-card {
+    background-color: rgba(5, 46, 22, 0.1);
+    border-color: rgb(134, 239, 172);
+    border-width: 0.125rem;
+    color: rgb(134, 239, 172);
+} 

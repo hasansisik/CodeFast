@@ -1,0 +1,200 @@
+/* Learning Flywheel Section Styles */
+.flywheel-section {
+    background-color: #ffffff;
+    padding: 128px 0;
+}
+
+.warning-text {
+    font-style: italic;
+    font-size: 24px;
+    color: rgb(185, 28, 28);
+    font-weight: 300;
+    margin-bottom: 2rem;
+}
+
+.warning-text .icon {
+    font-size: 32px;
+    margin-right: 8px;
+    font-style: normal;
+}
+
+.flywheel-content {
+    max-width: 100%;
+    margin: 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+}
+
+.flywheel-diagram {
+    position: relative;
+    width: 50rem;
+    height: 30rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flywheel-center {
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 120px;
+}
+
+.flywheel-item {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flywheel-item img {
+    width: 6rem;
+    height: 6rem;
+}
+
+.flywheel-item span {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #2b2b2b;
+    text-align: center;
+}
+
+/* Pozisyonlar */
+.item-top {
+    top: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.item-right {
+    top: 50%;
+    right: 2rem;
+    transform: translateY(-50%);
+}
+
+.item-bottom {
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.item-left {
+    top: 50%;
+    left: 2rem;
+    transform: translateY(-50%);
+}
+
+/* Rotasyonlar */
+.rotate-3 {
+    transform: rotate(3deg);
+}
+
+.rotate-n3 {
+    transform: rotate(-3deg);
+}
+
+.rotate-n6 {
+    transform: rotate(-6deg);
+}
+
+/* SVG Oklar */
+.arrow {
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+}
+
+.arrow-svg {
+    width: 4rem;
+    height: 4rem;
+    fill: #000;
+    opacity: 0.7;
+}
+
+/* Ok pozisyonları */
+.arrow-1 {
+    top: 15%;
+    right: 15%;
+    transform: rotate(-135deg);
+}
+
+.arrow-2 {
+    bottom: 15%;
+    right: 15%;
+    transform: rotate(-45deg);
+}
+
+.arrow-3 {
+    bottom: 15%;
+    left: 15%;
+    transform: rotate(45deg);
+}
+
+.arrow-4 {
+    top: 15%;
+    left: 15%;
+    transform: rotate(135deg);
+}
+
+.flywheel-section h2.display-4 {
+    font-size: 5rem;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.flywheel-section h2 .highlight {
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+    color: #000;
+    font-size: 5rem;
+}
+
+.flywheel-section h2 .highlight::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 15px;
+    width: 100%;
+    height: 25px;
+    background: rgb(102, 213, 167);
+    opacity: 0.5;
+    z-index: -1;
+}
+
+.flywheel-section .check-icon {
+    color: #28a745;
+    margin-right: 8px;
+}
+
+.flywheel-section .btn-primary {
+    background-color: rgb(171, 226, 203);
+    border: 1px solid #000;
+    color: #000;
+    padding: 20px 70px;
+    font-weight: 500;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.flywheel-section .btn-primary:hover {
+    transform: translate(-4px, -4px);
+    box-shadow: 4px 4px 0 0 rgba(0,0,0,1);
+}
+
+.flywheel-section .lead.text-muted {
+    color: #000 !important;
+}
+
+.flywheel-section .container {
+    max-width: 100%;
+    padding: 0;
+} 
