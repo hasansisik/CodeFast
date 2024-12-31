@@ -172,11 +172,9 @@ body {
 
 /* Sağdaki butonların container'ı */
 .navbar .d-flex {
-    position: absolute;
-    right: 0;
-    height: 100%;
     display: flex;
     align-items: center;
+    margin-left: auto;
 }
 
 /* Hero Section */
