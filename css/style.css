@@ -422,29 +422,31 @@ footer a:hover {
 }
 
 .comparison-section h2 {
-    font-size: 3.5rem;
+    font-size: 3.2rem;
     line-height: 1.2;
     margin-bottom: 64px;
 }
 
 .text-pink {
-    color: #ffc2c2;
+    font-style: italic;
+    color: #d78a8a;
 }
 
 .text-green {
-    color: #9fff9c;
+    font-style: italic;
+    color: #85e082;
 }
 
 .comparison-card {
     background-color: rgba(255, 255, 255, 0.05);
-    border-radius: 24px;
-    padding: 32px;
+    border-radius: 1.5rem;
+    padding: 2rem;
     height: 100%;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 0.125rem solid rgba(255, 255, 255, 0.1);
 }
 
 .comparison-card .card-header {
-    margin-bottom: 24px;
+    margin-bottom: 1.5rem;
 }
 
 .comparison-card h3 {
@@ -453,25 +455,57 @@ footer a:hover {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 0.75rem;
 }
 
-.comparison-card .icon {
-    font-size: 1.25rem;
+.icon-x, .icon-check {
+    width: 2rem;
+    height: 2rem;
+}
+
+.fill-red-300 {
+    fill: #fca5a5;
+}
+
+.stroke-red-300 {
+    stroke: #fca5a5;
+}
+
+.stroke-red-900 {
+    stroke: #7f1d1d;
+}
+
+.fill-green-300 {
+    fill: #86efac;
+}
+
+.stroke-green-300 {
+    stroke: #86efac;
+}
+
+.stroke-green-900 {
+    stroke: #14532d;
 }
 
 .comparison-card ul li {
     color: rgba(255, 255, 255, 0.8);
-    margin-bottom: 16px;
+    margin-bottom: 1rem;
     font-size: 1.125rem;
     line-height: 1.5;
 }
 
 .employee-card {
-    border-color: rgba(255, 194, 194, 0.2);
+    background-color: rgba(69, 10, 10, 0.1);
+    border-color: rgb(252, 165, 165);
+    border-width: 0.125rem;
+    color: rgb(252, 165, 165);
 }
 
 .entrepreneur-card {
-    border-color: rgba(159, 255, 156, 0.2);
+    background-color: rgba(5, 46, 22, 0.1);
+    border-color: rgb(134, 239, 172);
+    border-width: 0.125rem;
+    color: rgb(134, 239, 172);
 }
 
 /* Learning Flywheel Section Styles */
@@ -482,27 +516,36 @@ footer a:hover {
 
 .warning-text {
     font-style: italic;
-    font-size: 18px;
+    font-size: 24px;
     color: rgb(185, 28, 28);
     font-weight: 300;
+    margin-bottom: 2rem;
 }
 
 .warning-text .icon {
+    font-size: 32px;
     margin-right: 8px;
     font-style: normal;
 }
 
 .flywheel-content {
-    max-width: 600px;
-    margin: 64px auto;
+    max-width: 100%;
+    margin: 0;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh; /* Dikey ortalama için */
 }
 
 .flywheel-diagram {
     position: relative;
-    width: 450px;
-    height: 350px;
-    margin: 0 auto;
+    width: 50rem;
+    height: 30rem;
+    margin: 0 auto; /* Yatay ortalama */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .flywheel-center {
@@ -519,44 +562,42 @@ footer a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 90px;
 }
 
 .flywheel-item img {
-    width: 3rem;
-    height: 3rem;
-    margin-bottom: 4px;
+    width: 6rem; /* 64px - arrow ile aynı boyut */
+    height: 6rem; /* 64px - arrow ile aynı boyut */
 }
 
 .flywheel-item span {
-    font-size: 0.875rem;
+    font-size: 1.25rem; /* text biraz büyütüldü */
     font-weight: 600;
-    color: #333;
+    color: #2b2b2b;
     text-align: center;
 }
 
-/* Pozisyonlar */
+/* Pozisyonlar - daha geniş aralıklar */
 .item-top {
-    top: 8px;
+    top: 2rem;
     left: 50%;
     transform: translateX(-50%);
 }
 
 .item-right {
     top: 50%;
-    right: 8px;
+    right: 2rem;
     transform: translateY(-50%);
 }
 
 .item-bottom {
-    bottom: 8px;
+    bottom: 2rem;
     left: 50%;
     transform: translateX(-50%);
 }
 
 .item-left {
     top: 50%;
-    left: 8px;
+    left: 2rem;
     transform: translateY(-50%);
 }
 
@@ -576,53 +617,65 @@ footer a:hover {
 /* SVG Oklar */
 .arrow {
     position: absolute;
-    width: 36px;
-    height: 42px;
+    width: 4rem; /* 64px - image ile aynı */
+    height: 4rem; /* 64px - image ile aynı */
 }
 
 .arrow-svg {
-    width: 36px;
-    height: 42px;
+    width: 4rem;
+    height: 4rem;
     fill: #000;
+    opacity: 0.7;
 }
 
+/* Ok pozisyonları - daha köşelerde */
 .arrow-1 {
-    top: 12%;
-    right: 12%;
+    top: 15%;
+    right: 15%;
     transform: rotate(-135deg);
 }
 
 .arrow-2 {
-    bottom: 12%;
-    right: 12%;
-    transform: rotate(-55deg);
+    bottom: 15%;
+    right: 15%;
+    transform: rotate(-45deg);
 }
 
 .arrow-3 {
-    bottom: 12%;
-    left: 12%;
+    bottom: 15%;
+    left: 15%;
     transform: rotate(45deg);
 }
 
 .arrow-4 {
-    top: 12%;
-    left: 12%;
+    top: 15%;
+    left: 15%;
     transform: rotate(135deg);
+}
+
+.flywheel-section h2.display-4 {
+    font-size: 5rem; /* 64px */
+    line-height: 1.5;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
 }
 
 .flywheel-section h2 .highlight {
     position: relative;
     display: inline-block;
+    z-index: 1;
+    color: #000;
+    font-size: 5rem; /* 64px */
 }
 
 .flywheel-section h2 .highlight::after {
     content: '';
     position: absolute;
     left: 0;
-    bottom: 5px;
+    bottom: 15px; /* Çizginin pozisyonunu ayarladım */
     width: 100%;
     height: 25px;
-    background: rgb(159, 255, 156);
+    background: rgb(102, 213, 167);
     opacity: 0.5;
     z-index: -1;
 }
@@ -633,11 +686,12 @@ footer a:hover {
 }
 
 .flywheel-section .btn-primary {
-    background-color: rgb(159, 255, 156);
+    background-color: rgb(171, 226, 203);
     border: 1px solid #000;
     color: #000;
-    padding: 20px 75px;
-    font-weight: 700;
+    padding: 20px 70px;
+    font-weight: 500;
+    font-size: 16px;
     transition: all 0.3s ease;
 }
 
@@ -673,8 +727,8 @@ footer a:hover {
 }
 
 .testimonial-avatar {
-    width: 120px;
-    height: 120px;
+    width: 208px;
+    height: 208px;
     object-fit: cover;
     border: 1px solid #000;
     box-shadow: 4px 4px 0 0 rgba(0,0,0,1);
@@ -683,12 +737,12 @@ footer a:hover {
 .testimonial-text {
     text-align: left;
     flex: 1;
-    max-width: 400px;
+    max-width: 800px;
 }
 
 .quote {
     font-size: 1rem;
-    line-height: 1.4;
+    line-height: 1.5;
     color: #000;
 }
 
@@ -703,7 +757,7 @@ footer a:hover {
 .quote .highlight {
     color: #ae5a00;
     font-weight: 600;
-    font-size: 1rem;
+    font-size: 1.5rem;
     position: relative;
     display: inline-block;
     z-index: 1;
@@ -716,7 +770,7 @@ footer a:hover {
     bottom: 2px;
     width: 100%;
     height: 25px;
-    background-color: rgb(234, 179, 8);
+    background-color: rgb(237, 197, 78);
     opacity: 0.3;
     z-index: -1;
 }
@@ -725,17 +779,17 @@ footer a:hover {
     font-size: 1rem;
     color: #666;
     font-style: italic;
+    margin-top: 1rem;
 }
 
 .built-info {
     text-align: center;
-    font-size: 12px;
+    font-size: 16px;
     color: #000000;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 8px;
     margin: 2rem 0;
     width: fit-content;
     padding-left: 64px;
@@ -755,21 +809,23 @@ footer a:hover {
 .built-link {
     font-style: italic;
     text-decoration: underline;
-    color: #000;
-    text-decoration: none;
+    color: #0000b6;
     font-weight: 300;
+    margin: 0 4px;
 }
 
 .built-link:hover {
     font-style: italic;
+    color: #090083;
     text-decoration: underline;
+    opacity: 0.8;
 }
 
 .macbook-container {
     position: relative;
     width: 100%;
     margin-top: 24px;
-    max-width: 500px;
+    max-width: 800px;
     margin-left: auto;
     margin-right: auto;
     margin: 2rem 0 0;
@@ -788,7 +844,7 @@ footer a:hover {
     width: 74.5%;
     height: 74%;
     overflow: hidden;
-    border-radius: 10px;
+    border-radius: 20px;
     background-color: #000;
 }
 
@@ -802,22 +858,94 @@ footer a:hover {
 
 .quote-container {
     position: relative;
-    padding-top: 24px;
-    max-width: 400px;
+    padding-top: 2.5rem;
 }
 
 .quote-svg {
     position: absolute;
     top: 0;
     left: 0;
-    width: 24px;
-    height: 24px;
+    width: 2rem; /* 32px */
+    height: 2rem; /* 32px */
     color: #000;
-    opacity: 1;
+    opacity: 0.8;
 }
 
 .quote-text {
-    max-width: 400px;
     margin: 0;
+    line-height: 1.5;
+    font-size: 1.5rem;
+}
+
+.quote-text .highlight {
+    color: #ae5a00;
+    font-weight: 600;
+    position: relative;
+    display: inline;
+    z-index: 1;
+}
+
+.quote-text .comma {
+    color: #000;
+    display: inline;
+    font-weight: normal;
+    margin-right: 0.25rem;
+}
+
+.quote-text .regular-text {
+    color: #000;
+    display: block;
+    font-weight: normal;
+    margin-top: 0.75rem;
+}
+
+.quote-text .highlight::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 2px;
+    width: 100%;
+    height: 25px;
+    background-color: rgb(237, 197, 78);
+    opacity: 0.3;
+    z-index: -1;
+}
+
+.author {
+    font-size: 1rem;
+    color: #666;
+    font-style: italic;
+    margin-top: 1rem;
+}
+
+.text-muted {
+    font-size: 1rem;
+    color: #252525;
+    font-weight: 300;
+}
+
+.check-icon {
+    color: #28a745;
+    margin-right: 0.5rem;
+    font-size: 1rem;
+}
+
+.lead.text-muted {
+    font-size: 1.5rem;
+    color: #000 !important;
     line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto;
+    font-weight: 400;
+}
+
+/* Bootstrap'in text-muted sınıfını override etmek için */
+.flywheel-section .lead.text-muted {
+    color: #000 !important;
+}
+
+/* Container'ın margin'ini kaldıralım */
+.flywheel-section .container {
+    max-width: 100%;
+    padding: 0;
 } 
