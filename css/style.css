@@ -948,4 +948,44 @@ footer a:hover {
 .flywheel-section .container {
     max-width: 100%;
     padding: 0;
+}
+
+/* Terms Page Styles */
+.terms-content {
+    padding-top: 120px;
+    color: var(--text-color);
+}
+
+.terms-content h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.terms-content h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+
+.terms-section {
+    margin-bottom: 2rem;
+}
+
+.terms-section ul {
+    padding-left: 1.5rem;
+}
+
+.terms-section ul li {
+    margin-bottom: 0.5rem;
+}
+
+.terms-section a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.terms-section a:hover {
+    text-decoration: underline;
 } 
