@@ -76,3 +76,66 @@ function updateTimer() {
 
 // Start the timer when the page loads
 document.addEventListener('DOMContentLoaded', updateTimer); 
+
+// FAQ işlevselliği
+document.addEventListener('DOMContentLoaded', function() {
+  const faqHeaders = document.querySelectorAll('.faq-header');
+  
+  faqHeaders.forEach(header => {
+    header.addEventListener('click', function() {
+      const faqItem = this.parentElement;
+      const content = this.nextElementSibling;
+      const icon = this.querySelector('.faq-icon');
+      
+      // Diğer tüm FAQ öğelerini kapat
+      document.querySelectorAll('.faq-item').forEach(item => {
+        if (item !== faqItem) {
+          item.classList.remove('active');
+          item.querySelector('.faq-content').style.display = 'none';
+          item.querySelector('.faq-icon').classList.remove('active');
+        }
+      });
+      
+      // Tıklanan öğeyi aç/kapat
+      faqItem.classList.toggle('active');
+      icon.classList.toggle('active');
+      
+      if (content.style.display === 'none') {
+        content.style.display = 'block';
+      } else {
+        content.style.display = 'none';
+      }
+    });
+  });
+}); 
+
+// FAQ Accordion
+document.addEventListener('DOMContentLoaded', function() {
+  const faqButtons = document.querySelectorAll('#faq button');
+  
+  faqButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const isExpanded = button.getAttribute('aria-expanded') === 'true';
+      const content = button.nextElementSibling;
+      
+      // Tüm diğer açık olan FAQ öğelerini kapat
+      faqButtons.forEach(otherButton => {
+        if (otherButton !== button) {
+          otherButton.setAttribute('aria-expanded', 'false');
+          otherButton.nextElementSibling.style.maxHeight = '0px';
+          otherButton.nextElementSibling.style.opacity = '0';
+        }
+      });
+      
+      // Tıklanan öğeyi aç/kapat
+      button.setAttribute('aria-expanded', !isExpanded);
+      if (!isExpanded) {
+        content.style.maxHeight = content.scrollHeight + 'px';
+        content.style.opacity = '1';
+      } else {
+        content.style.maxHeight = '0px';
+        content.style.opacity = '0';
+      }
+    });
+  });
+}); 

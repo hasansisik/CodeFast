@@ -1,0 +1,160 @@
+#faq {
+  padding: 80px 0;
+  background-color: #fff;
+}
+
+#faq .max-w-7xl {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+#faq .text-3xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 800;
+  padding-bottom: 4rem;
+  text-align: center;
+}
+
+#faq .max-w-xl {
+  max-width: 36rem;
+  margin: 0 auto;
+}
+
+#faq ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#faq li {
+  border-bottom: 1px solid #000000;
+}
+
+#faq li:last-child {
+  border-bottom: none;
+}
+
+#faq button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1.5rem;
+  text-align: left;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+#faq button:hover {
+  opacity: 0.8;
+}
+
+#faq button svg {
+  width: 1rem;
+  height: 1rem;
+  margin-left: auto;
+  flex-shrink: 0;
+  fill: currentColor;
+}
+
+/* Artı/eksi ikonları için yeni stiller */
+#faq button svg rect:last-child {
+  transform: rotate(90deg);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+
+#faq button[aria-expanded="true"] svg rect:last-child {
+  transform: rotate(0deg);
+}
+
+#faq .text-base-content {
+  color: #1f2937;
+}
+
+#faq .text-base-content-secondary {
+  color: #4b5563;
+}
+
+/* Açık durumdaki FAQ öğesi için stiller */
+#faq button[aria-expanded="true"] {
+  background-color: rgb(171, 226, 203);
+  border: 1px solid #000;
+}
+
+#faq .transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
+#faq .overflow-hidden {
+  background-color: rgb(171, 226, 203);
+  border: 1px solid #000;
+  border-top: none;
+  margin-top: -1px;
+}
+
+#faq .pb-6 {
+  padding: 1.5rem;
+}
+
+#faq .leading-relaxed {
+  line-height: 1.625;
+}
+
+#faq .space-y-3 > * + * {
+  margin-top: 0.75rem;
+}
+
+#faq .list {
+  list-style-type: decimal;
+  padding-left: 1.25rem;
+}
+
+#faq .list-inside {
+  list-style-position: inside;
+}
+
+#faq .font-semibold {
+  font-weight: 600;
+}
+
+#faq .link {
+  color: #000;
+  text-decoration: underline;
+}
+
+#faq .link:hover {
+  opacity: 0.8;
+}
+
+#faq .list-disc {
+  list-style-type: disc;
+}
+
+#faq .mt-2 {
+  margin-top: 0.5rem;
+}
+
+#faq .space-y-1 > * + * {
+  margin-top: 0.25rem;
+}
+
+/* Animasyon için */
+#faq .overflow-hidden[style*="max-height: 0"] {
+  opacity: 0;
+  padding: 0;
+}
+
+#faq button[aria-expanded="true"] + .overflow-hidden {
+  max-height: none !important;
+  opacity: 1;
+} 
