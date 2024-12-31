@@ -814,7 +814,6 @@ footer a:hover {
     bottom: 2px;
     width: 100%;
     height: 25px;
-    background-color: rgb(237, 197, 78);
     opacity: 0.3;
     z-index: -1;
 }
@@ -922,11 +921,11 @@ footer a:hover {
 }
 
 .quote-text .highlight {
-    color: #ae5a00;
-    font-weight: 600;
+    font-weight: 500;
     position: relative;
     display: inline;
     z-index: 1;
+    font-size: 1.4rem;
 }
 
 .quote-text .comma {
@@ -950,14 +949,14 @@ footer a:hover {
     bottom: 2px;
     width: 100%;
     height: 25px;
-    background-color: rgb(237, 197, 78);
+    background-color: rgb(254, 249, 195);
     opacity: 0.3;
     z-index: -1;
 }
 
 .author {
     font-size: 1rem;
-    color: #666;
+    color: #202020;
     font-style: italic;
     margin-top: 1rem;
 }
@@ -1113,4 +1112,215 @@ footer a:hover {
     .timeline-point {
         margin-bottom: 2rem;
     }
+} 
+
+/* Course Content Section Styles */
+.course-content {
+    background-color: #fff;
+    padding: 128px 0;
+    margin-top: 64px;
+}
+
+.course-title {
+    font-size: 4rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+    letter-spacing: -0.03em;
+}
+
+.course-title .highlight {
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+}
+
+.course-title .highlight::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    width: 100%;
+    height: 25px;
+    background: rgb(249, 220, 248);
+    opacity: 1;
+    z-index: -1;
+}
+
+.course-subtitle {
+    font-size: 1.25rem;
+    color: #666;
+    margin-bottom: 4rem;
+    font-style: italic;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+    border: 1px solid #000;
+}
+
+.grid-item {
+    padding: 40px;
+    position: relative;
+    overflow: hidden;
+}
+
+.grid-item.mindset {
+    border-bottom: 1px solid #000;
+    border-right: 1px solid #000;
+}
+
+.grid-item.fundamentals {
+    border-bottom: 1px solid #000;
+}
+
+.grid-item.saas {
+    grid-column: 1 / -1;
+}
+
+.content-icon {
+    width: 192px;
+    height: 192px;
+    margin-bottom: 32px;
+}
+
+.content-header {
+    margin-bottom: 32px;
+}
+
+.title-badge {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 8px;
+    position: relative;
+}
+
+.title-badge h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 16px;
+    font-weight: 300;
+    padding: 5px 8px;
+    border-bottom: 1px solid #000;
+    border-left: 1px solid #000;
+    z-index: 10;
+    margin: 0;
+    background-color: #fff;
+    border-radius: 0;
+    color: #000;
+}
+
+.badge-blue {
+    background-color: rgb(203, 231, 255);
+}
+
+.badge-orange {
+    background-color:rgb(255, 228, 204);
+}
+
+.badge-green {
+    background-color: rgb(171, 226, 203);
+}
+
+.subtitle {
+    color: #1f1f1f;
+    font-size: 16px;
+    margin: 0;
+}
+
+.feature-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 12px;
+}
+
+.feature-list.three-column {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.feature-list li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+}
+
+.check-icon {
+    color: #000;
+    opacity: 0.8;
+}
+
+.content-section {
+    margin-top: 40px;
+}
+
+.content-section h4 {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    color: #666;
+    margin-bottom: 12px;
+    letter-spacing: 0.05em;
+}
+
+.coming-soon {
+    font-style: italic;
+}
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-item.mindset {
+        border-right: none;
+    }
+
+    .feature-list.three-column {
+        grid-template-columns: 1fr;
+    }
+
+    .content-icon {
+        width: 144px;
+        height: 144px;
+    }
+} 
+
+/* Preview Button Section */
+.preview-section {
+    background-color: #fff;
+    padding: 64px 0 128px;
+    margin-top: -64px;
+}
+
+.preview-button {
+    display: inline-flex;
+    align-items: center;
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #000;
+    background: #fff;
+    border: 1px solid #000;
+    border-radius: 100px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.preview-button:hover {
+    transform: translate(-4px, -4px);
+    box-shadow: 4px 4px 0 0 rgba(0,0,0,1);
+    color: #000;
+    text-decoration: none;
 } 
