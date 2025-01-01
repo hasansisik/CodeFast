@@ -1,0 +1,82 @@
+/* Teacher Introduction Section */
+.teacher-intro {
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.teacher-intro .intro-text {
+    font-size: 1.5rem;
+    color: #000;
+}
+
+.story-list {
+    list-style: none;
+    padding: 0;
+    max-width: 48rem;
+    font-size: 1.125rem;
+    line-height: 1.75;
+}
+
+.story-image {
+    max-width: 28rem;
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.tiny-business-link {
+    background-color: rgb(255, 228, 204);
+    padding: 0 0.125rem;
+    text-decoration: none;
+    color: #000;
+}
+
+.tiny-business-link:hover {
+    text-decoration: underline;
+    color: #000;
+}
+
+.course-features {
+    max-width: 300px;
+    margin-top: -1rem;
+    list-style-position: inside;
+}
+
+.author-info {
+    margin-bottom: 2rem;
+}
+
+.author-info img {
+    border: 1px solid rgba(0,0,0,0.1);
+    box-shadow: 2px 2px 0 0 rgba(0,0,0,1);
+    transition: all 0.3s ease;
+}
+
+.author-info img:hover {
+    transform: translate(-4px, -4px);
+    box-shadow: 3px 3px 0 0 rgba(0,0,0,1);
+}
+
+.author-info span {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.author-info span.color-black {
+    color: #000 !important;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .teacher-intro .intro-text {
+        font-size: 1.25rem;
+    }
+    
+    .story-list {
+        font-size: 1rem;
+    }
+    
+    .story-image {
+        max-width: 100%;
+    }
+} 

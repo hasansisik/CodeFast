@@ -1,0 +1,97 @@
+/* Timeline Section Styles */
+.timeline {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 128px;
+}
+
+.timeline-line {
+    position: absolute;
+    top: 75%;
+    left: -100vw;
+    right: -100vw;
+    height: 0.5px;
+    background: #000;
+    transform: translateY(-50%);
+}
+
+.timeline-point {
+    text-align: center;
+    position: relative;
+}
+
+.timeline-point::after {
+    content: '';
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background: #000;
+    border-radius: 50%;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.timeline-icon {
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+.timeline-icon img {
+    width: 192px;
+    height: 192px;
+}
+
+/* Day 1 - Gear icon */
+.timeline-point:nth-child(1) .timeline-icon img {
+    transform: scale(0.60) translateY(16px);
+}
+
+/* Day 9 - Credit card reader */
+.timeline-point:nth-child(3) .timeline-icon img {
+    transform: scale(0.75) translateY(16px);
+}
+
+.timeline-content {
+    margin-top: 30px;
+    padding-top: 30px;
+}
+
+.timeline-content h3 {
+    font-size: 1.125rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.timeline-content p {
+    color: #666;
+    font-size: 1rem;
+    margin: 0 auto;
+    max-width: 20rem;
+}
+
+/* Timeline noktaları için hover efekti */
+.timeline-icon:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+}
+
+@media (max-width: 991px) {
+    .timeline-line {
+        display: none;
+    }
+    
+    .timeline-point::after {
+        display: none;
+    }
+    
+    .timeline {
+        padding-bottom: 64px;
+    }
+    
+    .timeline-point {
+        margin-bottom: 2rem;
+    }
+} 
