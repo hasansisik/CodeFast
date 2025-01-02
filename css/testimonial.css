@@ -260,4 +260,56 @@
 .testimonials-avatars img:hover {
     transform: translateY(-2px);
     z-index: 2;
+}
+
+/* Mobil Responsive Düzenlemeler */
+@media (max-width: 768px) {
+    .testimonial-header {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .testimonial-avatar {
+        width: 120px;
+        height: 120px;
+        margin: 0;
+    }
+
+    .testimonial-text {
+        text-align: left;
+        width: 100%;
+    }
+
+    .quote-text {
+        font-size: 1rem;
+        line-height: 1.4;
+    }
+
+    .quote-text .highlight {
+        font-size: 1.1rem;
+        background-color: rgb(254, 249, 195);
+        padding: 0 4px;
+    }
+
+    .quote-text .second-line {
+        font-size: 0.95rem;
+    }
+
+    .author {
+        font-size: 0.9rem;
+        margin-top: 0.75rem;
+    }
+
+    .built-info {
+        padding-left: 0;
+        margin-left: 32px;
+        position: relative;
+    }
+
+    .arrow-down {
+        position: absolute;
+        left: -32px;
+        top: 50%;
+        transform: translateY(-50%) rotate(270deg) scale(0.8);
+    }
 } 
